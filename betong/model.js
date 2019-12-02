@@ -1,10 +1,12 @@
 let model = {
+
     tilbyder: [
         {
+            id: 0,
             bedrift: "Betongsentrum AS",
             kontaktperson: "Jim Hansen",
             adresse: "Hvittingfossveien 254, 3089 Holmestrand",
-            tlf: "923 78 455",
+            tlf: ["923 78 455"],
             ansatte: "4",
             hjemmeside: "www.betongsentrum.no",
             orgnr: "921743432",
@@ -13,13 +15,45 @@ let model = {
                 snorydding: [true, 'spade', 'snofreser', 'traktor'],
                 betong: [true, 'forskaling', 'gulvstoping'],
             }
-        }
+        },
+
+        {
+            id: 1,
+            bedrift: "Murer Sørensen AS",
+            kontaktperson: "Remi Sørensen",
+            adresse: "Løkeveien 265, 3160 Stokke",
+            tlf: ["486 65 289"],
+            ansatte: "1",
+            hjemmeside: "undefined",
+            orgnr: "921587456",
+            faktadr: "Løkeveien 265, 3160 Stokke",
+            tjenester: {
+                snorydding: [true, 'spade', 'snofreser', 'traktor'],
+                betong: [false],
+            }
+        },
+
+        {
+            id: 2,
+            bedrift: "Kjetils Betong AS",
+            kontaktperson: "Kjetil Karlsen",
+            adresse: "Bettånggata 14, 1452 Tong",
+            tlf: ["985 54 778"],
+            ansatte: "3",
+            hjemmeside: "www.kjetilsbetong.no",
+            orgnr: "365985412",
+            faktadr: "Bettånggata 14, 1452 Tong",
+            tjenester: {
+                snorydding: [true, 'spade', 'snofreser', 'traktor'],
+                betong: [true, "forskaling", "gulvstøping"],
+            }
+        },
     ],
 
 
-    aktivejobber: [
+    aktiveJobber: [
         {
-            tilbyder: "Betongsentrum AS",
+            tilbyder: 0,
             omrode: "Vestfold",
             type: "Betongoppdrag"
         }
@@ -28,7 +62,7 @@ let model = {
 
     historikk: [
         {
-            bedrift: "Betongsentrum AS",
+            bedrift: 0,
             jobber: [
                 {
                     dato: "16.08.2019",
@@ -40,7 +74,7 @@ let model = {
         },
 
         {
-            bedrift: "Kjetils Betong AS",
+            bedrift: 2,
             jobber: [
                 {
                     dato: "23.06.2019",
@@ -53,20 +87,20 @@ let model = {
     ],
 
 
-    sendtetilbud: [
+    sendteTilbud: [
 
     ],
 
 
     rangering: [
         {
-            bedrift: "Betongsentrum AS",
+            bedrift: 0,
             stjerner: 4,
             vurderinger: 1
         },
 
         {
-            bedrift: "Kjetils Betong AS",
+            bedrift: 2,
             stjerner: 2,
             vurderinger: 1
         }
