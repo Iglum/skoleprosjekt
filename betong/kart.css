@@ -1,0 +1,10 @@
+
+button.kartknapper {
+    background-color: #0B91E5;
+    color: white;
+    border: none;
+}
+
+button.kartknapper:hover{
+    background-color: rgb(84, 162, 211);
+}
