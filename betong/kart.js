@@ -6,8 +6,6 @@ let bildehoyde = 505;
 function kartside(){
     let html = "";
 
-console.log("Kjører");
-
     html += 
     `<div id="kartcontainer">
     <input type="text" style="position: absolute; width: 340px; margin-left: 10px;" value="Søk:"></input>
