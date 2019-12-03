@@ -1,5 +1,3 @@
-let test = document.getElementById("mainContent");
-
 function minside() {
   let html = "";
 
