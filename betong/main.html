@@ -9,7 +9,9 @@
     <title>Bestill.no</title>
   </head>
 
-  <body>
+  <body
+    onload="document.getElementById('mainContent').innerHTML = loggInnSide()"
+  >
     <script src="model.js"></script>
     <script src="startside.js"></script>
     <script src="kart.js"></script>
@@ -17,7 +19,7 @@
     <div class="mainContent" id="mainContent"></div>
 
     <script>
-      console.log(minside());
+      let mainHTML = document.getElementById("mainContent");
     </script>
   </body>
 </html>

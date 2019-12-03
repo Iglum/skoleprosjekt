@@ -1,10 +1,12 @@
-let mainhtml = document.getElementById("mainContent");
+// let mainhtml = document.getElementById("mainContent");
 let knappebredde = 90;
 let knappehoyde = 58;
 let bildehoyde = 505;
 
 function kartside(){
     let html = "";
+
+console.log("Kjører");
 
     html += 
     `<div id="kartcontainer">
