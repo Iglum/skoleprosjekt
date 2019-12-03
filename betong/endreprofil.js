@@ -1,9 +1,13 @@
-let test = document.getElementById("mainContent");
+//endre profil
 
-function minside() {
+function endreprofil() {
   let html = "";
 
-  html += model.tilbyder[1].bedrift;
+  html += `
+
+  <p>Some text</P>
+        
+    `;
 
   return html;
 }
