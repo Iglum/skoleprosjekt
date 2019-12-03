@@ -67,6 +67,13 @@ let model = {
             bedrift: 0,
             jobber: [
                 {
+                    dato: "25.06.2019",
+                    status: "avslått",
+                    tittel: "Armering",
+                    beskrivelse: "*Beskrivelse av jobb*"
+                },
+
+                {
                     dato: "16.08.2019",
                     status: "Fullført",
                     tittel: "Gulvstøping Garasje",
@@ -74,6 +81,7 @@ let model = {
                 }
             ]
         },
+
 
         {
             bedrift: 2,
