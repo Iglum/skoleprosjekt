@@ -1,8 +1,10 @@
-let mainhtml = document.getElementById("mainContent");
+// let mainhtml = document.getElementById("mainContent");
 let knappebredde = 90;
 
 function kartside(){
     let html = "";
+
+console.log("Kjører");
 
     html += 
     `<div id="kartcontainer">

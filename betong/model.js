@@ -1,3 +1,5 @@
+// let mainHTML = document.getElementById('mainContent').innerHTML;
+
 let model = {
 
     tilbyder: [
