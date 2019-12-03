@@ -1,3 +1,5 @@
+importScripts mainhtml.html
+
 let mainhtml = document.getElementById("mainContent");
 let knappebredde = 90;
 let knappehoyde = 58;
