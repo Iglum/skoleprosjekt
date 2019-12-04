@@ -5,7 +5,8 @@ function regBedrift() {
     html +=
         `
     <div id="registrerBedrift">
-    <center><img src="https://www.betongsentrum.no/wp-content/uploads/2019/09/Bestillno3-1024x123.png">
+    <img src="https://www.betongsentrum.no/wp-content/uploads/2019/09/Bestillno3-1024x123.png" style="width: 360px; height: 50px;">
+    <center>
     <table>
     <tr>
         <th>Navn på bedrift:</th> 

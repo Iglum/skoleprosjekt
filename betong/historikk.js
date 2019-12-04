@@ -21,7 +21,6 @@ function visHistorikk(innloggetbedrift){
             
             statusfarge = historikk.jobber[x].status == "Fullført" ? statusfarge = "green" :
                 historikk.jobber[x].status == "Avslått" ? statusfarge = "red" : statusfarge = "grey";
-            console.log(statusfarge);
             
             
             html +=

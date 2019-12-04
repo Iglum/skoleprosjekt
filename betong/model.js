@@ -106,9 +106,48 @@ let model = {
         }
     ],
 
+    chat: [
+        {
+            bedrift: 0,
+            personer: [
+                {
+                    navn: "Per Hansen",
+                    meldinger: [
+                        {
+                            avsender: "Per Hansen",
+                            innhold: "Hei. Jeg lurer på blablabla"
+                        },
+
+                        {
+                            avsender: 0,
+                            innhold: "Hei, Per. Dette kan vi fikse blablabla"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+
 
     sendteTilbud: [
+        {
+            bedrift: 0,
+            jobber: [
+                {
+                    dato: "29.12.2019",
+                    status: "Venter...",
+                    tittel: "Støping byggeplass",
+                    beskrivelse: "*Beskrivelse av jobb*"
+                },
 
+                {
+                    dato: "08.01.2020",
+                    status: "Venter...",
+                    tittel: "Gulvstøping Garasje",
+                    beskrivelse: "*Beskrivelse av jobb*"
+                }
+            ]
+        },
     ],
 
 

@@ -1,0 +1,3 @@
+function meldingsside(innloggetbedrift){
+    
+}
