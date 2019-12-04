@@ -12,7 +12,7 @@ function loggInnSide(innloggetbedrift){
         <br><br>
         <p onclick="mainHTML.innerHTML = regBedrift(${innloggetbedrift})">Registrer ny bruker</p>
         <br>
-        <button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})">Besøkende</button>
+        <button onclick="mainHTML.innerHTML = kartside()">Besøkende</button>
         
     </center>
     </div>
