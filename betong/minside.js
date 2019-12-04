@@ -24,9 +24,9 @@ function minside(innloggetbedrift) {
     "Email: " +
     model.tilbyder[innloggetbedrift].email +
     "</br>" +
-    "<button>Endre Profil</button>" +
+    "<button onclick='mainHTML.innerHTML = endreprofil(" + innloggetbedrift + ")'>Endre Profil</button>" +
     " " +
-    "<button>Historikk</button>" +
+    "<button onclick='mainHTML.innerHTML = visHistorikk(" + innloggetbedrift + ")'>Historikk</button>" +
     " " +
     "<button>Sendte bud</button>" +
     " " +
