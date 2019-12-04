@@ -1,7 +1,7 @@
 // let mainhtml = document.getElementById("mainContent");
 let knappebredde = 90;
 let knappehoyde = 58;
-let bildehoyde = 505;
+let bildehoyde = 640;
 
 function kartside(){
     let html = "";
