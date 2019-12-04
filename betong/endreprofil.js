@@ -13,7 +13,7 @@ function endreprofil(innloggetbedrift) {
     <p>Endre profil</P>
     Kontaktperson:
     <br>
-    <input type="text" name="FirstName" value="Mickey Mouse">
+    <input type="text" name="FirstName" value="Jim Hansen">
     <br>
     Firmanavn:
     </br>
