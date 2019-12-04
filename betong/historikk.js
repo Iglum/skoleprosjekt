@@ -30,9 +30,9 @@ function visHistorikk(innloggetbedrift){
             <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
                 <h3>${historikk.jobber[x].tittel}</h1>
                 <ul>
-                <li style="color: ${statusfarge}">${historikk.jobber[x].status}</li>
-                <li>${historikk.jobber[x].dato}</li>
-                <li>${historikk.jobber[x].beskrivelse}</li>
+                <li>Status: <span style="color: ${statusfarge}">${historikk.jobber[x].status}</span></li>
+                <li>Dato: ${historikk.jobber[x].dato}</li>
+                <li>Beskrivelse: </br>${historikk.jobber[x].beskrivelse}</li>
                 </ul>
             </div>
             </br>
