@@ -66,7 +66,7 @@ function regBedrift() {
     </tr>
     </table>
     </br></br>
-    <button onclick="mainHTML.innerHTML = loggInnSide()">Avbryt</button> <button onclick="mainHTML.innerHTML = kartside()">Fullfør</button>
+    <button onclick="mainHTML.innerHTML = loggInnSide()">Avbryt</button> <button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)">Fullfør</button>
     </div>
     `
 
