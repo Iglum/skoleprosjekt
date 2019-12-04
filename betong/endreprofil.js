@@ -23,7 +23,7 @@ function endreprofil(innloggetbedrift) {
     <br>
     Faktureringsdresse:
     <br>
-  <input type="text" name="faktadr" value="${model.tilbyder[innloggetbedrift].faktadr}">
+    <input type="text" name="faktadr" value="${model.tilbyder[innloggetbedrift].faktadr}">
     <br>
     Organisasjonsnr:
     <br>
