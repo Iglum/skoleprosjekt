@@ -13,6 +13,7 @@ let model = {
             hjemmeside: "www.betongsentrum.no",
             orgnr: "921743432",
             faktadr: "Hvittingfossveien 254, 3089 Holmestrand",
+            email: "post@betongsentrum.no",
             tjenester: {
                 snorydding: [true, 'spade', 'snofreser', 'traktor'],
                 betong: [true, 'forskaling', 'gulvstoping'],
@@ -29,6 +30,7 @@ let model = {
             hjemmeside: "undefined",
             orgnr: "921587456",
             faktadr: "Løkeveien 265, 3160 Stokke",
+            email: "post@murersorensen.no",
             tjenester: {
                 snorydding: [true, 'spade', 'snofreser', 'traktor'],
                 betong: [false],
@@ -45,6 +47,7 @@ let model = {
             hjemmeside: "www.kjetilsbetong.no",
             orgnr: "365985412",
             faktadr: "Bettånggata 14, 1452 Tong",
+            email: "post@kjertilsbetong.no",
             tjenester: {
                 snorydding: [true, 'spade', 'snofreser', 'traktor'],
                 betong: [true, "forskaling", "gulvstøping"],
