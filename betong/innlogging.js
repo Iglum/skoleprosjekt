@@ -1,6 +1,6 @@
 // let mainhtml = document.getElementById("mainContent");
 
-function loggInnSide(innloggetbedrift) {
+function loggInnSide() {
   let html = "";
 
   html += `<div id="innlogging">
@@ -11,9 +11,9 @@ function loggInnSide(innloggetbedrift) {
         <center>
         <input value="Epost/telefon"></input>
         <br><br>
-        <button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})">Logg inn</button>
+        <button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)">Logg inn</button>
         <br><br>
-        <p onclick="mainHTML.innerHTML = regBedrift(${innloggetbedrift})">Registrer ny bruker</p>
+        <p onclick="mainHTML.innerHTML = regBedrift()">Registrer ny bruker</p>
         <br>
         <button onclick="mainHTML.innerHTML = kartside()">Besøkende</button>
         </center>
