@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="kart.css" />
   <link rel="stylesheet" href="endreprofil.css" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
   <title>Bestill.no</title>
 </head>
 
@@ -20,9 +23,37 @@
   <script src="innlogging.js"></script>
   <script src="historikk.js"></script>
   <script src="registrerbedrift.js"></script>
+ 
+  <!-- Kart stuff -->
+  <div id='map' style='width: 360px; height: 640px;'></div>
+
+
   <div class="mainContent" id="mainContent"></div>
 
   <script>
+
+// Testing av kart med Mapbox sin api
+//*************************************************************//
+mapboxgl.accessToken = 'pk.eyJ1IjoiaWdsdW0iLCJhIjoiY2szOTd2ZG4yMDlidzNpa3FpZ3o5MHlnbyJ9.qGCG0zHrr5_rl8yHh86kQQ';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [10.02797, 59.05261],
+  zoom: 13.5
+  
+});
+
+var popup = new mapboxgl.Popup()
+.setHTML('<h3>Get Academy</h3><p>A great school 😍</p>');
+
+var marker = new mapboxgl.Marker()
+.setLngLat([10.02797, 59.05261])
+.setPopup(popup)
+.addTo(map);
+
+  
+//*************************************************************//
+
     let mainHTML = document.getElementById("mainContent");
     let innloggetBedrift = 0;
 
