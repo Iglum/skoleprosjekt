@@ -26,10 +26,10 @@ function minside(innloggetbedrift) {
     Email: 
     ${model.tilbyder[innloggetbedrift].email}
     </br>
-    <button onclick='mainHTML.innerHTML = endreprofil(${innloggetbedrift})'>Endre Profil</button>
+    <button onclick='mainHTML.innerHTML = endreprofil(innloggetBedrift)'>Endre Profil</button>
     
-    <button onclick='mainHTML.innerHTML = visHistorikk(${innloggetbedrift})'>Historikk</button>
-    <button>Sendte bud</button>
+    <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)'>Historikk</button>
+    <button onclick='mainHTML.innerHTML = sendteTilbud(innloggetBedrift)'>Sendte tilbud</button>
     
     <div id="kartcontainer">
     
