@@ -9,9 +9,7 @@ function chatside(innloggetbedrift) {
 
 
 
-<div onclick="meldinger(innloggetBedrift, ${
-    model.chat[0].personer[0].navn
-  }))" style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+<div onclick="mainHTML.innerHTML = meldinger(${innloggetbedrift}, 'Per Hansen')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
                 <h2>${model.chat[0].personer[0].navn}</h2>
                 <ul>
                 <li></span></li>
