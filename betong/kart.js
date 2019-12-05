@@ -8,7 +8,7 @@ function kartside(innloggetbedrift) {
     let html = "";
 
     html += `
-        <div id="kartcontainer">
+        <div id="kartcontainer" onclick="mainHTML.innerHTML += popupjobb()">
         <input type="text" style="position: absolute; width: 340px; margin-left: 10px;" value="Søk:"></input>
         <img src="kart.png" style="width: 360px; height: ${bildehoyde}px;"></img>
         `

@@ -54,11 +54,39 @@ let model = {
     }
   ],
 
-  aktiveJobber: [
+  aktiveTjenester: [
     {
       tilbyder: 0,
       omrode: "Vestfold",
       type: "Betongoppdrag"
+    }
+  ],
+
+  tilgjengeligeJobber: [
+    {
+      kunde: "Kjetil Nordmann",
+      jobber: [
+        tittel: "Gulvstøping til Garasje",
+        beskrivelse: "Beskrivelse av jobben",
+        dato: "13.02.2020"
+      ]
+    }
+  ],
+
+  forespurteJobber: [
+    {
+      kunde: "Per Hansen",
+      jobber: [
+          {
+              tittel: "Armering",
+              beskrivelse: "*Beskrivelse av jobben*",
+              dato: "13.02.2020",
+              bedrifterForespurt: [
+                  0,
+                  2
+              ]
+          }
+      ]
     }
   ],
 
