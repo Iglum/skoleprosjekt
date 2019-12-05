@@ -31,9 +31,11 @@
   <script src="registrerbedrift.js"></script>
 
   <!-- Kart stuff -->
-  <div id='map' style='width: 360px; height: 640px;'></div>
 
-  <div id='geocoder' class='geocoder'></div>
+  <!-- <div id='map' style='width: 360px; height: 640px;'></div>
+  <div id='geocoder' class='geocoder'></div> -->
+
+  <!-- Kart stuff -->
 
   <div class="mainContent" id="mainContent"></div>
 
@@ -42,27 +44,28 @@
 
     // Testing av kart med Mapbox sin api
     //*************************************************************//
-    mapboxgl.accessToken = 'pk.eyJ1IjoiaWdsdW0iLCJhIjoiY2szOTd2ZG4yMDlidzNpa3FpZ3o5MHlnbyJ9.qGCG0zHrr5_rl8yHh86kQQ';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [10.02797, 59.05261],
-      zoom: 13.5
+    
+    // mapboxgl.accessToken = 'pk.eyJ1IjoiaWdsdW0iLCJhIjoiY2szOTd2ZG4yMDlidzNpa3FpZ3o5MHlnbyJ9.qGCG0zHrr5_rl8yHh86kQQ';
+    // var map = new mapboxgl.Map({
+    //   container: 'map',
+    //   style: 'mapbox://styles/mapbox/streets-v11',
+    //   center: [10.02797, 59.05261],
+    //   zoom: 13.5
 
-    });
+    // });
 
-    map.addControl(new MapboxGeocoder({
-      accessToken: mapboxgl.accessToken,
-      mapboxgl: mapboxgl
-    }));
+    // map.addControl(new MapboxGeocoder({
+    //   accessToken: mapboxgl.accessToken,
+    //   mapboxgl: mapboxgl
+    // }));
 
-    var popup = new mapboxgl.Popup()
-      .setHTML('<h3>Get Academy</h3><p>A great school 😍</p>');
+    // var popup = new mapboxgl.Popup()
+    //   .setHTML('<h3>Get Academy</h3><p>A great school 😍</p>');
 
-    var marker = new mapboxgl.Marker()
-      .setLngLat([10.02797, 59.05261])
-      .setPopup(popup)
-      .addTo(map);
+    // var marker = new mapboxgl.Marker()
+    //   .setLngLat([10.02797, 59.05261])
+    //   .setPopup(popup)
+    //   .addTo(map);
 
 
       
