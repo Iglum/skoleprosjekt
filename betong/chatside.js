@@ -8,16 +8,41 @@ html += `
   <h2 style="width: 100%; display: inline-block; color: white;">Chat</h2></br>
   </div>
 
-${model.chat[0].personer[0].navn}
 
 
-
-
-
-
-
-
-
+<div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+                <h2>${model.chat[0].personer[0].navn}</h2>
+                <ul>
+                <li></span></li>
+                <li><h3>Emne:</h3> ${model.chat[0].personer[0].meldinger[0].emne}</li>
+                </br>
+               
+                </ul>
+            </div>
+            </br>
+        
+            <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+                <h2>${model.chat[0].personer[1].navn}</h2>
+                <ul>
+                <li></span></li>
+                <li><h3>Emne:</h3> ${model.chat[0].personer[1].meldinger[0].emne}</li>
+                </br>
+               
+                </ul>
+            </div>
+            </br>
+     
+            <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+                <h2>${model.chat[0].personer[2].navn}</h2>
+                <ul>
+                <li></span></li>
+                <li><h3>Emne:</h3> ${model.chat[0].personer[2].meldinger[0].emne}</li>
+                </br>
+               
+                </ul>
+            </div>
+            </br>
+            </div>
 
 
   <button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde-knappehoyde}px; left: ${(0*knappebredde)}px;">${svgkartikon}</button>
