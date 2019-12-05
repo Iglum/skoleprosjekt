@@ -4,7 +4,7 @@ function minside(innloggetbedrift) {
   html +=
   `
   <div style="background-color: #0B91E5; display: flex;">
-  <button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})" style="display: inline-block; background-color: #0B91E5; border: none; font-size: 50px; color: white; width: 30px;">⤶</button>
+  
   <h2 style="width: 100%; display: inline-block; color: white;">Min Side</h2></br>
   </div>
     
@@ -36,7 +36,7 @@ function minside(innloggetbedrift) {
     
     <button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde-knappehoyde}px; left: ${(0*knappebredde)}px;">${svgkartikon}</button>
     <button class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde-knappehoyde}px; left: ${(1*knappebredde)}px;">${svgsokikon}</button>
-    <button onclick="mainHTML.innerHTML = meldingsside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde-knappehoyde}px; left: ${(2*knappebredde)}px;">${svgmelding}</button>
+    <button onclick="mainHTML.innerHTML = chatside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde-knappehoyde}px; left: ${(2*knappebredde)}px;">${svgmelding}</button>
     <button onclick="mainHTML.innerHTML = minside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde-knappehoyde}px; left: ${(3*knappebredde)}px;">${svgminside}</button>
     </div>
     `
