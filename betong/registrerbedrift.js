@@ -69,6 +69,9 @@ function regBedrift() {
     </br></br>
     <button onclick="mainHTML.innerHTML = loggInnSide()">Avbryt</button> <button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)">Fullfør</button>
     </div>
+
+    
+    <div style="top: 550px; position: absolute">${svgbilbord}</div>
     `
 
     return html;
