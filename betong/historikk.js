@@ -31,6 +31,7 @@ function visHistorikk(innloggetbedrift){
                 <ul>
                 <li>Status: <span style="color: ${statusfarge}">${historikk.jobber[x].status}</span></li>
                 <li>Dato: ${historikk.jobber[x].dato}</li>
+                </br>
                 <li>Beskrivelse: </br>${historikk.jobber[x].beskrivelse}</li>
                 </ul>
             </div>

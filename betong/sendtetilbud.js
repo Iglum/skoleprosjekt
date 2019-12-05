@@ -14,25 +14,19 @@ function sendteTilbud(innloggetbedrift){
 
     for (let i = 0; i < model.sendteTilbud.length; i++){
         if (model.sendteTilbud[i].bedrift == innloggetbedrift){
-            let historikk = model.sendteTilbud[i];
-            for (let x = historikk.jobber.length-1; x >= 0; x--){
-            
-            let statusfarge = "";
-            
-            statusfarge = historikk.jobber[x].status == "Fullført" ? statusfarge = "green" :
-                historikk.jobber[x].status == "Avslått" ? statusfarge = "red" : statusfarge = "grey";
-            console.log(statusfarge);
-            
+            let sendt = model.sendteTilbud[i];
+            for (let x = sendt.jobber.length-1; x >= 0; x--){            
             
             html +=
             
             `
             <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
-                <h3>${historikk.jobber[x].tittel}</h1>
+                <h3>${sendt.jobber[x].tittel}</h1>
                 <ul>
-                <li>Status: <span style="color: ${statusfarge}">${historikk.jobber[x].status}</span></li>
-                <li>Dato: ${historikk.jobber[x].dato}</li>
-                <li>Beskrivelse: </br>${historikk.jobber[x].beskrivelse}</li>
+                <li>Status: <span style="color: grey;">${sendt.jobber[x].status}</span></li>
+                <li>Dato: ${sendt.jobber[x].dato}</li>
+                </br>
+                <li>Beskrivelse: </br>${sendt.jobber[x].beskrivelse}</li>
                 </ul>
             </div>
             </br>
