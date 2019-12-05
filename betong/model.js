@@ -115,12 +115,48 @@ let model = {
                     meldinger: [
                         {
                             avsender: "Per Hansen",
+                            emne: "Spørsmål ang. støping",
                             innhold: "Hei. Jeg lurer på blablabla"
                         },
 
                         {
                             avsender: 0,
+                            emne: "RE: Spørsmål ang. støping",
                             innhold: "Hei, Per. Dette kan vi fikse blablabla"
+                        }
+                    ]
+                },
+
+                {
+                    navn: "Anita Dahl",
+                    meldinger: [
+                        {
+                            avsender: "Anita Dahl",
+                            emne: "Platting",
+                            innhold: "Hei, Jim. Jeg har et spørsmål: blablabla"
+                        },
+
+                        {
+                            avsender: 0,
+                            emne: "RE: Platting",
+                            innhold: "Hei, Anita. Vi vil i så fall løse det på følgende måte: blablabla"
+                        }
+                    ]
+                },
+
+                {
+                    navn: "Kjell Olsen",
+                    meldinger: [
+                        {
+                            avsender: "Kjell Olsen",
+                            emne: "Misfornøyd",
+                            innhold: "Hei. Jeg er ikke fornøyd med jobben dere gjorde hos blablabla"
+                        },
+
+                        {
+                            avsender: 0,
+                            emne: "RE: Misfornøyd",
+                            innhold: "Hei, Kjell. Synd å høre at du ikke ble fornøyd. Hva kan vi gjøre for blablabla"
                         }
                     ]
                 }
