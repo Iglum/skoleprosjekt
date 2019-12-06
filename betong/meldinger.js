@@ -23,18 +23,17 @@ function meldinger(innloggetbedrift, person) {
                         let bakgrunnsfarge = "";
                         let farge = "";
                         let avrunding = "";
-                        msg.meldinger[y].avsender == innloggetbedrift ? (align = "right", bakgrunnsfarge = "rgb(93, 188, 210)", farge = "white", avrunding = "20px 20px 5px 20px") : (align = "left", bakgrunnsfarge = "#F8F8F8", avrunding = "20px 20px 20px 5px");
+                        let plassering = "";
+                        msg.meldinger[y].avsender == innloggetbedrift ? (align = "right", plassering = "right", bakgrunnsfarge = "rgb(93, 188, 210)", farge = "white", avrunding = "20px 20px 5px 20px") : (align = "left", bakgrunnsfarge = "#F8F8F8", avrunding = "20px 20px 20px 5px");
 
                         html += `
-                            </br>
-                            <div style="text-align: ${align}; background-color: ${bakgrunnsfarge}; color: ${farge}; border: 1px solid #C6C6C6; border-radius: ${avrunding};">
+                            <div style="margin: 5px; padding: 5px; float: ${plassering}; display: inline-block; text-align: ${align}; background-color: ${bakgrunnsfarge}; color: ${farge}; border: 1px solid #C6C6C6; border-radius: ${avrunding};">
                             <h4>${msg.meldinger[y].avsender}</h4>
                             <ul>
                             <li>${msg.meldinger[y].emne}</li>
                             <li>${msg.meldinger[y].innhold}</li>
                             </ul>
                             </div>
-                            
                             `;
                     }
                 }
