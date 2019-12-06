@@ -42,6 +42,8 @@ function visHistorikk(innloggetbedrift){
             
         }
     }
+
+    html += navbar;
     
     return html;
 

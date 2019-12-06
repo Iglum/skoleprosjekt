@@ -44,5 +44,7 @@ function endreprofil(innloggetbedrift) {
     
     `;
 
+    html += navbar;
+
   return html;
 }

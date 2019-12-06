@@ -36,6 +36,8 @@ function sendteTilbud(innloggetbedrift){
             
         }
     }
+
+    html += navbar;
     
     return html;
 
