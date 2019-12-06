@@ -24,12 +24,15 @@ function meldinger(innloggetbedrift, person) {
                         let farge = "";
                         let avrunding = "";
                         let plassering = "";
-                        msg.meldinger[y].avsender == innloggetbedrift ? (align = "right", plassering = "right", bakgrunnsfarge = "rgba(11, 145, 229)", farge = "white", avrunding = "20px 20px 5px 20px") : (align = "left", bakgrunnsfarge = "#F8F8F8", avrunding = "20px 20px 20px 5px");
+                        let klarer = "";
+                        msg.meldinger[y].avsender == innloggetbedrift ?
+                            (align = "right", plassering = "right", klarer = "left", bakgrunnsfarge = "rgba(11, 145, 229)", farge = "white", avrunding = "20px 20px 5px 20px") :
+                            (align = "left", plassering = "left", klarer = "right", bakgrunnsfarge = "#F8F8F8", avrunding = "20px 20px 20px 5px");
 
                         html += `
-                            <div style="margin: 5px; padding: 5px; float: ${plassering}; display: inline-block; text-align: ${align}; background-color: ${bakgrunnsfarge}; color: ${farge}; border: 1px solid #C6C6C6; border-radius: ${avrunding};">
+                            <div style="clear: ${klarer}; margin: 5px; padding: 5px; float: ${plassering}; display: inline-block; text-align: ${align}; background-color: ${bakgrunnsfarge}; color: ${farge}; border: 1px solid #C6C6C6; border-radius: ${avrunding};">
                             <h4>${msg.meldinger[y].avsender}</h4>
-                            <ul>
+                            <ul style="list-style-type: none;">
                             <li>${msg.meldinger[y].emne}</li>
                             <li>${msg.meldinger[y].innhold}</li>
                             </ul>
