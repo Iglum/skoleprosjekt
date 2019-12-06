@@ -1,7 +1,6 @@
 // let mainhtml = document.getElementById("mainContent");
-let knappebredde = 90;
-let knappehoyde = 58;
-let bildehoyde = 640;
+
+
 
 
 function kartside(innloggetbedrift) {
@@ -14,13 +13,7 @@ function kartside(innloggetbedrift) {
         `
 
     if (innloggetbedrift!= null && (innloggetbedrift).constructor === Number) {
-        html += `
-            <button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${model.svg[0].svg}</button>
-            <button class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * knappebredde)}px;">${model.svg[1].svg}</button>
-            <button onclick="mainHTML.innerHTML = chatside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(2 * knappebredde)}px;">${model.svg[2].svg}</button>
-            <button onclick="mainHTML.innerHTML = minside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${model.svg[3].svg}</button>
-            </div>
-            `
+        html += navbar;
     } else {
         html += `
             <button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">Logg inn</button>
