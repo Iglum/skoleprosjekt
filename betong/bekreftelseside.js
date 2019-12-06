@@ -11,7 +11,7 @@ function bekreftelse(innloggetbedrift) {
 <h3>Tilbudet er sendt!</h3>
 </br>
 Kunde: 
-${}
+
 
 
 
