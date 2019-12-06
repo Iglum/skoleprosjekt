@@ -71,7 +71,7 @@ function regBedrift() {
     </div>
 
     
-    <div style="top: 550px; position: absolute">${svgbilbord}</div>
+    <div style="top: 550px; position: absolute">${model.svg[4].svg}</div>
     `
 
     return html;
