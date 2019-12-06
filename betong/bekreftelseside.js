@@ -14,9 +14,6 @@ Kunde:
 
 
 
-
-
-
 `
 
 return html;
