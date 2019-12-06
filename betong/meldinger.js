@@ -44,5 +44,7 @@ function meldinger(innloggetbedrift, person) {
         }
     }
 
+    html += navbar;
+
     return html;
 }
