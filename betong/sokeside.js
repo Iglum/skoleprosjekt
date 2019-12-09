@@ -1,5 +1,5 @@
 
-function sokeSide(innloggetbedrift) {
+function sokeSide(innloggetBedrift) {
     let html = "";
 
     html += `
@@ -45,7 +45,9 @@ function sokeSide(innloggetbedrift) {
            
             </ul>
         </div>
-    `
+    `;
+
+    html += navbar;
 
     return html;
 }
