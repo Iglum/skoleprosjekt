@@ -1,13 +1,12 @@
 function minside(innloggetbedrift) {
     let html = "";
 
-    html +=
-        `
+    html += `
   <div style="background-color: #0B91E5; display: flex;">
   
   <h2 style="width: 100%; display: inline-block; color: white;">Min Side</h2></br>
   </div>
-    
+    <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
     Kontaktperson: 
     ${model.tilbyder[innloggetbedrift].kontaktperson}
     </br> 
@@ -33,7 +32,7 @@ function minside(innloggetbedrift) {
     
     <div id="kartcontainer">
     
-    `
+    `;
     html += navbar;
 
     return html;

@@ -1,30 +1,57 @@
-input[type="text"] {
-  background: #f8f8f8;
-  padding-left: 5px;
-  border-radius: 3px;
-  display: block;
-  border: 1px solid #cdcdcd;
-  margin: 0 auto;
+.avatar {
+  vertical-align: middle;
+  padding-top: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
-input[type="button"] {
+h2 {
+  margin: auto 10px;
+}
+
+.center {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.font {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="text"] {
+  font-family: Roboto;
+
+  background: #f8f8f8;
+  padding-left: 50px;
+  padding: 4px;
+  border-radius: 4px;
+  display: block;
+  border: 1px solid #cdcdcd;
+  width: 95%;
 }
 
 input[type="text"]:focus {
   border: 1px solid #555;
 }
 
-/* dev border plus för att få inputs i center */
-div.wrapper {
-  /* border: 3px solid black; */
+input[type="button"] {
+  display: block;
 }
 
 .btn-group button {
-  background-color: #0b91e5; /* Green background */
-  border: 1px solid #54a2d3; /* Green border */
+  background-color: #0b91e5; /* Blue background */
+  border: 1px solid #54a2d3; /* Bluer border */
   color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
+  padding: 10px 10px; /* Some padding */
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 73.33%;
+  right: 11.11%;
+  top: 82.34%;
+  bottom: 11.09%;
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
 }
