@@ -71,7 +71,8 @@ let model = {
                 {
                     tittel: "Gulvstøping til Garasje",
                     beskrivelse: "Beskrivelse av jobben",
-                    dato: "13.02.2020"
+                    dato: "13.02.2020",
+                    omrode: "Holmestrand"
                 }
             ]
         },
@@ -82,7 +83,8 @@ let model = {
                 {
                     tittel: "Forskalling",
                     beskrivelse: "Beskrivelse av jobben",
-                    dato: "16.01.2020"
+                    dato: "16.01.2020",
+                    omrode: "Oslo"
                 }
             ]
         }

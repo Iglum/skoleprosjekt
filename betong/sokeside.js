@@ -23,6 +23,28 @@ function sokeSide(innloggetbedrift) {
     </tr>
     </table>
     </div>
+    </br>
+    <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+                <h2>${model.tilgjengeligeJobber[0].jobber[0].tittel}</h2>
+                <ul>
+                <li></span></li>
+                <li>Område: ${model.tilgjengeligeJobber[0].jobber[0].omrode}</li>
+                <li>Dato: ${model.tilgjengeligeJobber[0].jobber[0].dato}</li>
+                </br>
+               
+                </ul>
+            </div>
+            </br>
+            <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+            <h2>${model.tilgjengeligeJobber[1].jobber[0].tittel}</h2>
+            <ul>
+            <li></span></li>
+            <li>Område: ${model.tilgjengeligeJobber[1].jobber[0].omrode}</li>
+            <li>Dato: ${model.tilgjengeligeJobber[1].jobber[0].dato}</li>
+            </br>
+           
+            </ul>
+        </div>
     `
 
     return html;
