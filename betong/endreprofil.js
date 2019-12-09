@@ -36,8 +36,15 @@ function endreprofil(innloggetbedrift) {
     Email:
     <br>
     <input type="text" name="email" value="${model.tilbyder[innloggetbedrift].email}">
-        
+    <br>
+    <br>
+    <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)'>Historikk</button><br>
+    <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)'>Historikk</button><br>
+
+    
     `;
+
+    html += navbar;
 
   return html;
 }

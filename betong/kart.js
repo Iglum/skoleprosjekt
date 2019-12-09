@@ -1,7 +1,6 @@
 // let mainhtml = document.getElementById("mainContent");
-let knappebredde = 90;
-let knappehoyde = 58;
-let bildehoyde = 640;
+
+
 
 
 function kartside(innloggetbedrift) {
@@ -10,23 +9,29 @@ function kartside(innloggetbedrift) {
     html += `
         <div id="kartcontainer">
         <input type="text" style="position: absolute; width: 340px; margin-left: 10px;" value="Søk:"></input>
-        <img src="kart.png" style="width: 360px; height: ${bildehoyde}px;"></img>
+        <img src="kart.png" style="width: 360px; height: ${bildehoyde}px;" onclick="popupjobb(document.getElementById('popup'))"></img>
         `
 
     if (innloggetbedrift!= null && (innloggetbedrift).constructor === Number) {
-        html += `
-            <button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${svgkartikon}</button>
-            <button class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * knappebredde)}px;">${svgsokikon}</button>
-            <button onclick="mainHTML.innerHTML = chatside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(2 * knappebredde)}px;">${svgmelding}</button>
-            <button onclick="mainHTML.innerHTML = minside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${svgminside}</button>
-            </div>
-            `
+        html += navbar;
     } else {
         html += `
             <button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">Logg inn</button>
             <button onclick="mainHTML.innerHTML = regBedrift()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * (knappebredde*2))}px;">Registrer deg</button>
             `
     }
+
+    html+=`
+    <div id="popup" style="top: 20%; position: absolute; visibility: hidden; left: 23px; background-color: white; border: 1px solid black">
+        <h3>Kjell Nordmann</h3>
+        </br>
+        <p>Ønsker gulvstøping til garasje</p>
+        <p>Dato: 28.02.2020</p>
+        </br>
+        <button>Se mer info</button>
+        <button onclick="popupjobb(document.getElementById('popup'))">Tilbake</button>
+     </div>
+`
 
     return html;
 }
