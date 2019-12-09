@@ -20,7 +20,7 @@ function chatside(innloggetbedrift) {
 
                 html += `
                     <h5>Fra: ${avsender}</h5>
-                    <h5>${person.meldinger[sistemelding].emne}</h5>
+                    <h5>Emne: ${person.meldinger[sistemelding].emne}</h5>
                     </div>
                     `
             }
