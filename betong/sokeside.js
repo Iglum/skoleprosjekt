@@ -1,6 +1,7 @@
 
-function sokeSide(innloggetBedrift) {
+function sokeSide(innloggetbedrift) {
     let html = "";
+    console.log(innloggetbedrift);
 
     html += `
     <div style="background-color: #0B91E5; display: flex;">
@@ -35,7 +36,7 @@ function sokeSide(innloggetBedrift) {
     </table>
     </div>
     </br>
-    <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+    <div onclick="mainHTML.innerHTML = oppdraginfo(${innloggetbedrift})" style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
                 <h2>${model.tilgjengeligeJobber[0].jobber[0].tittel}</h2>
                 <ul>
                 <li></span></li>
