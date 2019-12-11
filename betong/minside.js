@@ -15,47 +15,49 @@ function minside() {
   </div>
   </br>
     <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
+    <center><p style="font-size: 35px;">★★★☆</p></center>
 
-    ${person}: 
-    ${model.bruker[innloggetBruker][innlogget][person.toLowerCase()]}
+    <p style="font-size: 20px; margin-left: 10px;"><b>${person}:</b> 
+    </br>${model.bruker[innloggetBruker][innlogget][person.toLowerCase()]}
     </br>
     `
 
   if (innlogget == "tilbyder") {
     html += `
-    Firmanavn:  
+    <b>Firmanavn:</b>  
     ${model.bruker[innloggetBruker][innlogget].bedrift}
     </br>
     `
   }
 
   html += `
-  Adresse:
-  ${model.bruker[innloggetBruker][innlogget].adresse}
-    </br >
+  <b>Adresse:</b>
+  </br>${model.bruker[innloggetBruker][innlogget].adresse}
+    </br>
     `
 
   if (innlogget == "tilbyder") {
     html += `
-    Orgnr:
-  ${model.bruker[innloggetBruker][innlogget].orgnr}
-    </br >
+    <b>Organisasjonsnummer:</b>
+    </br>${model.bruker[innloggetBruker][innlogget].orgnr}
+    </br>
     `
   }
 
   html += `
-    Telefon:
-  ${model.bruker[innloggetBruker][innlogget].tlf}
-    </br >
-    Email:
-  ${model.bruker[innloggetBruker][innlogget].email}
-    </br >
+    <b>Telefon:</b>
+  </br>${model.bruker[innloggetBruker][innlogget].tlf}
+    </br>
+    <b>Email:</b>
+    </br>${model.bruker[innloggetBruker][innlogget].email}
+    </br>
+    </p>
+    <center><div class="button-group" style="margin-top: 5px;">
     <button onclick='mainHTML.innerHTML = endreprofil()'>Endre Profil</button>
-
     <button onclick='mainHTML.innerHTML = visHistorikk()'>Historikk</button>
     <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
-
-    <div id="kartcontainer">
+    </div></center>
+    
 
       `;
   html += navbar;
@@ -63,24 +65,25 @@ function minside() {
   return html;
 }
 
+//<div id="kartcontainer">
 
 //PIAS:
-//<center><p style="font-size: 35px;">★★★☆</p></center>
-    //<p style="font-size: 20px; margin-left: 10px;"><b>Kontaktperson:</b>
-    //</br>${model.tilbyder[innloggetbedrift].kontaktperson}
-    //</br> 
-    //<b>Firmanavn:</b> 
-    //</br>${model.tilbyder[innloggetbedrift].bedrift}
-    //</br> 
-    //<b>Adresse:</b>
-    //</br>${model.tilbyder[innloggetbedrift].adresse}
-    //</br>
-    //<b>Organisasjonsnr.:</b> 
-    //</br>${model.tilbyder[innloggetbedrift].orgnr}
-    //</br>
+//<center><p style="font-size: 35px;">★★★☆</p></center> CHECK
+    //<p style="font-size: 20px; margin-left: 10px;"><b>Kontaktperson:</b> CHECK
+    //</br>${model.tilbyder[innloggetbedrift].kontaktperson} CHECK
+    //</br> CHECK
+    //<b>Firmanavn:</b> CHECK
+    //</br>${model.tilbyder[innloggetbedrift].bedrift} CHECK
+    //</br> CHECK
+    //<b>Adresse:</b> CHECK
+    //</br>${model.tilbyder[innloggetbedrift].adresse} CHECK
+    //</br> CHECK
+    //<b>Organisasjonsnr.:</b> CHECK
+    //</br>${model.tilbyder[innloggetbedrift].orgnr} CHECK
+    //</br> CHECK
     //<b>Telefon:</b>
     //</br>${model.tilbyder[innloggetbedrift].tlf}
-    //</br>
+    //</br> CHECK
     //<b>Email:</b>
     //</br>${model.tilbyder[innloggetbedrift].email}
     //</p>
