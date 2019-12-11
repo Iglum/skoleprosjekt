@@ -4,31 +4,34 @@ function minside(innloggetbedrift) {
     html += `
   <div style="background-color: #0B91E5; display: flex;">
   
-  <h2 style="width: 100%; display: inline-block; color: white;">Min Side</h2></br>
+  <h2 style="width: 100%; display: inline-block; color: white; text-align: center;">Min Side</h2></br>
   </div>
+  </br>
     <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
-    Kontaktperson: 
-    ${model.tilbyder[innloggetbedrift].kontaktperson}
+    <center><p style="font-size: 35px;">★★★☆</p></center>
+    <p style="font-size: 20px; margin-left: 10px;"><b>Kontaktperson:</b>
+    </br>${model.tilbyder[innloggetbedrift].kontaktperson}
     </br> 
-    Firmanavn:  
-    ${model.tilbyder[innloggetbedrift].bedrift}
+    <b>Firmanavn:</b> 
+    </br>${model.tilbyder[innloggetbedrift].bedrift}
     </br> 
-    Adresse:
-   ${model.tilbyder[innloggetbedrift].adresse}
+    <b>Adresse:</b>
+    </br>${model.tilbyder[innloggetbedrift].adresse}
     </br>
-    Orgnr:  
-    ${model.tilbyder[innloggetbedrift].orgnr}
+    <b>Organisasjonsnr.:</b> 
+    </br>${model.tilbyder[innloggetbedrift].orgnr}
     </br>
-    Telefon:
-    ${model.tilbyder[innloggetbedrift].tlf}
+    <b>Telefon:</b>
+    </br>${model.tilbyder[innloggetbedrift].tlf}
     </br>
-    Email: 
-    ${model.tilbyder[innloggetbedrift].email}
-    </br>
-    <button onclick='mainHTML.innerHTML = endreprofil(innloggetBedrift)'>Endre Profil</button>
-    
-    <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)'>Historikk</button>
-    <button onclick='mainHTML.innerHTML = sendteTilbud(innloggetBedrift)'>Sendte tilbud</button>
+    <b>Email:</b>
+    </br>${model.tilbyder[innloggetbedrift].email}
+    </p>
+    <center><div class="button-group" style="margin-top: 5px;">
+      <button onclick='mainHTML.innerHTML = endreprofil(innloggetBedrift)'>Endre Profil</button>
+      <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)'>Historikk</button>
+      <button onclick='mainHTML.innerHTML = sendteTilbud(innloggetBedrift)'>Sendte tilbud</button>
+    </div></center>
     
     <div id="kartcontainer">
     
