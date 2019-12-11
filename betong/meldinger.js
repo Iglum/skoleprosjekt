@@ -32,7 +32,7 @@ function meldinger(deltakere) {
         if (model.chat[i].deltakere.includes(innloggetBruker) && model.chat[i].deltakere.includes(parseInt(deltakere))) {
             let chat = model.chat[i].meldinger;
 
-            console.log(chat.length);
+            // console.log(chat.length);
 
             for (let y = 0; y < chat.length; y++) {
 

@@ -118,6 +118,17 @@ let model = {
         },
 
 
+        {
+            id: 8,
+            kunde: {
+                navn: "Ole Petter Sjøbrenn",
+                adresse: "Skuggedalveien 37, 3270 Larvik",
+                tlf: ["416 19 671"],
+                email: "sjobrenn98@gmail.com"
+            }
+        },
+
+
     ],
 
 
@@ -274,6 +285,26 @@ let model = {
                     emne: "RE: Misfornøyd",
                     innhold:
                         "Hei, Kjell. Synd å høre at du ikke ble fornøyd. Hva kan vi gjøre for blablabla"
+                }
+            ]
+        },
+
+
+        {
+            deltakere: [3, 8],
+            meldinger: [
+                {
+                    avsender: 8,
+                    emne: "Fett",
+                    innhold:
+                        "Hallå, brodern!"
+                },
+
+                {
+                    avsender: 3,
+                    emne: "RE: Fett",
+                    innhold:
+                        "Hallå. Trenger du no betong?"
                 }
             ]
         }
