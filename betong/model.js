@@ -334,6 +334,7 @@ let model = {
 
 let innloggetBedrift = 0;
 
+
 let knappebredde = 90;
 let knappehoyde = 58;
 let bildehoyde = 640;
