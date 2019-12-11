@@ -1,60 +1,126 @@
 // let mainHTML = document.getElementById('mainContent').innerHTML;
 
-
-
 let model = {
-    tilbyder: [
+
+    bruker: [
         {
             id: 0,
-            bedrift: "Betongsentrum AS",
-            kontaktperson: "Jim Hansen",
-            adresse: "Hvittingfossveien 254, 3089 Holmestrand",
-            tlf: ["923 78 455"],
-            ansatte: "4",
-            hjemmeside: "www.betongsentrum.no",
-            orgnr: "921743432",
-            faktadr: "Hvittingfossveien 254, 3089 Holmestrand",
-            email: "post@betongsentrum.no",
-            tjenester: {
-                snorydding: [true, "spade", "snofreser", "traktor"],
-                betong: [true, "forskaling", "gulvstoping"]
+            tilbyder: {
+                bedrift: "Betongsentrum AS",
+                kontaktperson: "Jim Hansen",
+                adresse: "Hvittingfossveien 254, 3089 Holmestrand",
+                tlf: ["923 78 455"],
+                ansatte: "4",
+                hjemmeside: "www.betongsentrum.no",
+                orgnr: "921743432",
+                faktadr: "Hvittingfossveien 254, 3089 Holmestrand",
+                email: "post@betongsentrum.no",
+                tjenester: {
+                    snorydding: [true, "spade", "snofreser", "traktor"],
+                    betong: [true, "forskaling", "gulvstoping"]
+                }
             }
         },
+
 
         {
             id: 1,
-            bedrift: "Murer Sørensen AS",
-            kontaktperson: "Remi Sørensen",
-            adresse: "Løkeveien 265, 3160 Stokke",
-            tlf: ["486 65 289"],
-            ansatte: "1",
-            hjemmeside: "undefined",
-            orgnr: "921587456",
-            faktadr: "Løkeveien 265, 3160 Stokke",
-            email: "post@murersorensen.no",
-            tjenester: {
-                snorydding: [true, "spade", "snofreser", "traktor"],
-                betong: [false]
+            tilbyder: {
+                bedrift: "Murer Sørensen AS",
+                kontaktperson: "Remi Sørensen",
+                adresse: "Løkeveien 265, 3160 Stokke",
+                tlf: ["486 65 289"],
+                ansatte: "1",
+                hjemmeside: "undefined",
+                orgnr: "921587456",
+                faktadr: "Løkeveien 265, 3160 Stokke",
+                email: "post@murersorensen.no",
+                tjenester: {
+                    snorydding: [true, "spade", "snofreser", "traktor"],
+                    betong: [false]
+                }
             }
         },
 
+
         {
             id: 2,
-            bedrift: "Kjetils Betong AS",
-            kontaktperson: "Kjetil Karlsen",
-            adresse: "Bettånggata 14, 1452 Tong",
-            tlf: ["985 54 778"],
-            ansatte: "3",
-            hjemmeside: "www.kjetilsbetong.no",
-            orgnr: "365985412",
-            faktadr: "Bettånggata 14, 1452 Tong",
-            email: "post@kjertilsbetong.no",
-            tjenester: {
-                snorydding: [true, "spade", "snofreser", "traktor"],
-                betong: [true, "forskaling", "gulvstøping"]
+            tilbyder: {
+                bedrift: "Kjetils Betong AS",
+                kontaktperson: "Kjetil Karlsen",
+                adresse: "Bettånggata 14, 1452 Tong",
+                tlf: ["985 54 778"],
+                ansatte: "3",
+                hjemmeside: "www.kjetilsbetong.no",
+                orgnr: "365985412",
+                faktadr: "Bettånggata 14, 1452 Tong",
+                email: "post@kjertilsbetong.no",
+                tjenester: {
+                    snorydding: [true, "spade", "snofreser", "traktor"],
+                    betong: [true, "forskaling", "gulvstøping"]
+                }
             }
-        }
+        },
+
+
+        {
+            id: 3,
+            kunde: {
+                navn: "Martin Brygmann",
+                adresse: "Ryghs vei 23, 0785 Oslo",
+                tlf: ["986 62 319"],
+                email: "martin@brygmann.no"
+            }
+        },
+
+
+        {
+            id: 4,
+            kunde: {
+                navn: "Pia Amundsen",
+                adresse: "Skipperløkka 5, 3260 Larvik",
+                tlf: ["900 70 967"],
+                email: "titovn99elskerkanin@piczo.no"
+            }
+        },
+
+
+        {
+            id: 5,
+            kunde: {
+                navn: "Per Hansen",
+                adresse: "Skinmoveien 2, 3270 Sandefjord",
+                tlf: ["492 65 882"],
+                email: "per.hansen@gmail.com"
+            }
+        },
+
+
+        {
+            id: 6,
+            kunde: {
+                navn: "Anita Dahl",
+                adresse: "Ragnhildrødveien 40, 3160 Stokke",
+                tlf: ["447 55 269"],
+                email: "anitadahl@gmail.com"
+            }
+        },
+
+
+        {
+            id: 7,
+            kunde: {
+                navn: "Kjell Olsen",
+                adresse: "Vennerødveien 20, 3158 Andebu",
+                tlf: ["963 58 002"],
+                email: "kjell72@hotmail.com"
+            }
+        },
+
+
     ],
+
+
 
     aktiveTjenester: [
         {
@@ -151,69 +217,67 @@ let model = {
 
     chat: [
         {
-            bedrift: 0,
-            personer: [
+            deltakere: [0, 5],
+            meldinger: [
                 {
-                    navn: "Per Hansen",
-                    meldinger: [
-                        {
-                            avsender: "Per Hansen",
-                            emne: "Spørsmål ang. støping",
-                            innhold: "Hei. Jeg lurer på blablabla"
-                        },
-
-                        {
-                            avsender: 0,
-                            emne: "RE: Spørsmål ang. støping",
-                            innhold: "Hei, Per. Dette kan vi fikse blablabla"
-                        },
-
-                        {
-                            avsender: "Per Hansen",
-                            emne: "RE:RE: Spørsmål ang. støping",
-                            innhold: "Dette höres jo helt rått ut! Dittendittenditten"
-                        }
-                    ]
+                    avsender: 5,
+                    emne: "Spørsmål ang. støping",
+                    innhold: "Hei. Jeg lurer på blablabla"
                 },
 
                 {
-                    navn: "Anita Dahl",
-                    meldinger: [
-                        {
-                            avsender: "Anita Dahl",
-                            emne: "Platting",
-                            innhold: "Hei, Jim. Jeg har et spørsmål: blablabla"
-                        },
-
-                        {
-                            avsender: 0,
-                            emne: "RE: Platting",
-                            innhold:
-                                "Hei, Anita. Vi vil i så fall løse det på følgende måte: blablabla"
-                        }
-                    ]
+                    avsender: 0,
+                    emne: "RE: Spørsmål ang. støping",
+                    innhold: "Hei, Per. Dette kan vi fikse blablabla"
                 },
 
                 {
-                    navn: "Kjell Olsen",
-                    meldinger: [
-                        {
-                            avsender: "Kjell Olsen",
-                            emne: "Misfornøyd",
-                            innhold:
-                                "Hei. Jeg er ikke fornøyd med jobben dere gjorde hos blablabla"
-                        },
+                    avsender: 5,
+                    emne: "RE:RE: Spørsmål ang. støping",
+                    innhold: "Dette höres jo helt rått ut! Dittendittenditten"
+                }
+            ]
+        },
 
-                        {
-                            avsender: 0,
-                            emne: "RE: Misfornøyd",
-                            innhold:
-                                "Hei, Kjell. Synd å høre at du ikke ble fornøyd. Hva kan vi gjøre for blablabla"
-                        }
-                    ]
+
+        {
+            deltakere: [0, 6],
+            meldinger: [
+                {
+                    avsender: 6,
+                    emne: "Platting",
+                    innhold: "Hei, Jim. Jeg har et spørsmål: blablabla"
+                },
+
+                {
+                    avsender: 0,
+                    emne: "RE: Platting",
+                    innhold:
+                        "Hei, Anita. Vi vil i så fall løse det på følgende måte: blablabla"
+                }
+            ]
+        },
+
+
+        {
+            deltakere: [0, 7],
+            meldinger: [
+                {
+                    avsender: 7,
+                    emne: "Misfornøyd",
+                    innhold:
+                        "Hei. Jeg er ikke fornøyd med jobben dere gjorde hos blablabla"
+                },
+
+                {
+                    avsender: 0,
+                    emne: "RE: Misfornøyd",
+                    innhold:
+                        "Hei, Kjell. Synd å høre at du ikke ble fornøyd. Hva kan vi gjøre for blablabla"
                 }
             ]
         }
+
     ],
 
     sendteTilbud: [
@@ -248,20 +312,6 @@ let model = {
             bedrift: 2,
             stjerner: 2,
             vurderinger: 1
-        }
-    ],
-
-    kunde: [
-        {
-            navn: "Martin Brygmann",
-            adresse: "Ryghs vei 23, 0785 Oslo",
-            tlf: "986 62 319"
-        },
-
-        {
-            navn: "Pia Amundsen",
-            adresse: "Skipperløkka 5, 3260 Larvik",
-            tlf: "900 70 967"
         }
     ],
 
@@ -332,27 +382,27 @@ let model = {
 };
 
 
-let innloggetBedrift = 0;
-
+let innloggetBruker = 0;
+let innlogget = "tilbyder";
 
 let knappebredde = 90;
 let knappehoyde = 58;
 let bildehoyde = 640;
 
 let navbar = `
-<button onclick="mainHTML.innerHTML = kartside(${innloggetBedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${model.svg[0].svg}</button>
-            <button onclick="mainHTML.innerHTML = sokeSide(${innloggetBedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * knappebredde)}px;">${model.svg[1].svg}</button>
-            <button onclick="mainHTML.innerHTML = chatside(${innloggetBedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(2 * knappebredde)}px;">${model.svg[2].svg}</button>
-            <button onclick="mainHTML.innerHTML = minside(${innloggetBedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${model.svg[3].svg}</button>
+<button onclick="mainHTML.innerHTML = kartside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${model.svg[0].svg}</button>
+            <button onclick="mainHTML.innerHTML = sokeSide(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * knappebredde)}px;">${model.svg[1].svg}</button>
+            <button onclick="mainHTML.innerHTML = chatside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(2 * knappebredde)}px;">${model.svg[2].svg}</button>
+            <button onclick="mainHTML.innerHTML = minside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${model.svg[3].svg}</button>
 `
 
 // !!! NAV BAR INNLOGGET!!! //
-//<button onclick="mainHTML.innerHTML = kartside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${svgkartikon}</button>
+//<button onclick="mainHTML.innerHTML = kartside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${svgkartikon}</button>
 //    <button class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * knappebredde)}px;">${svgsokikon}</button>
-//    <button onclick="mainHTML.innerHTML = chatside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(2 * knappebredde)}px;">${svgmelding}</button>
-//    <button onclick="mainHTML.innerHTML = minside(${innloggetbedrift})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${svgminside}</button>
+//    <button onclick="mainHTML.innerHTML = chatside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(2 * knappebredde)}px;">${svgmelding}</button>
+//    <button onclick="mainHTML.innerHTML = minside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${svgminside}</button>
 //            </div >
 
 // !!! NAV BAR IKKE INNLOGGET!!! //
-//<button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">Logg inn</button>
+//<button onclick="mainHTML.innerHTML = kartside(innloggetBruker)" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">Logg inn</button>
 //    <button onclick="mainHTML.innerHTML = regBedrift()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * (knappebredde*2))}px;">Registrer deg</button>

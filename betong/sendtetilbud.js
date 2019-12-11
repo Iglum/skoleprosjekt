@@ -1,19 +1,21 @@
 
 //Denne funksjonen itererer gjennom listen og lager html. 
 
-function sendteTilbud(innloggetbedrift){
+function sendteTilbud(){
     let html = "";
 
     html +=
     `
     <div style="background-color: #0B91E5; display: flex;">
-    <button onclick="mainHTML.innerHTML = minside(${innloggetbedrift})" style="display: inline-block; background-color: #0B91E5; border: none; font-size: 30px; color: white; padding-top: 5px; margin-left: 5px;">⤶</button>
+
+    <button onclick="mainHTML.innerHTML = minside()" style="display: inline-block; background-color: #0B91E5; border: none; font-size: 30px; color: white; padding-top: 5px; margin-left: 5px;">⤶</button>
     <h2 style="width: 100%; display: inline-block; color: white; text-align: center; margin-right: 50px;">Sendte tilbud</h2></br>
+
     </div>
     `
 
     for (let i = 0; i < model.sendteTilbud.length; i++){
-        if (model.sendteTilbud[i].bedrift == innloggetbedrift){
+        if (model.sendteTilbud[i].bedrift == innloggetBruker){
             let sendt = model.sendteTilbud[i];
             for (let x = sendt.jobber.length-1; x >= 0; x--){            
             
