@@ -1,3 +1,4 @@
+
 function chatside() {
     
     let person = "";
@@ -5,6 +6,15 @@ function chatside() {
     
     let html = "";
 
+
+//Denne funksjonene itererer igjennom modellen og skriver html
+
+    html += `
+    <div style="background-color: #0B91E5; display: flex;">
+  
+    <h2 style="width: 100%; display: inline-block; color: white; text-align: center;">Meldinger</h2></br>
+    </div>
+    `
 
     for (let i = 0; i < model.chat.length; i++) {
         if (model.chat[i].deltakere.includes(innloggetBruker)) {
@@ -20,9 +30,11 @@ function chatside() {
                 }
             }
 
+
             html += `
                     <div onclick="mainHTML.innerHTML = meldinger('${deltakere}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; padding: 15px 0 15px 0;">
                     <h2>${deltakere}</h2>
+
                     `
             let sistemelding = meldingsside.meldinger.length - 1;
 

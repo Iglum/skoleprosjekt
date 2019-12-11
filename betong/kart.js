@@ -3,7 +3,9 @@
 
 
 
+//Denne funksjonene sjekker innlogget bedrift, hvis man ikke er innlogget så vil man få 2 valg, logg inn eller registrer so
 function kartside() {
+
     let html = "";
 
     html += `

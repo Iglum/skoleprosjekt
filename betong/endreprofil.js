@@ -1,4 +1,5 @@
-//endre profil
+//endre profil-funksjonen gjør det samme som minside. Den sjekker hvilken bedrift som er innlogget og henter ut data 
+// fra modellen deretter. 
 
 function endreprofil() {
   let html = "";
@@ -13,8 +14,11 @@ function endreprofil() {
 
   html += `
     <div style="background-color: #0B91E5; display: flex;">
-    <h2 onclick="mainHTML.innerHTML = minside()" style="width: 100%; display: inline-block; color: white;">Endre Profil</h2></br>
+
+    <h2 onclick="mainHTML.innerHTML = minside()" style="width: 100%; display: inline-block; color: white; text-align: center;">Endre Profil</h2></br>
+
     </div>
+    </br>
     <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
     <div class="wrapper font">
     <center>
@@ -55,17 +59,24 @@ function endreprofil() {
         <br>
 </center>
 
-        <div class="btn-group" style="width:90%">
-          <button onclick='mainHTML.innerHTML = visHistorikk()' button style="width:50%">PLACEHOLDER TEXT</>
-          <button onclick='mainHTML.innerHTML = visHistorikk()' button style="width:50%">PLACEHOLDER TEXT</>
-        </div>
-        <br>
+<center><div class="button-group" style="margin: auto;">
+<button onclick='mainHTML.innerHTML = minside()'>Lagre</button>
+<button onclick='mainHTML.innerHTML = minside()'>Avbryt</button>
+</div></center>
     
-    </div>
-        <br>
-          `;
-      
-        html += navbar;
-      
-        return html;
-      }
+
+</div>
+<br>
+`;
+
+html += navbar;
+
+return html;
+}
+
+// <div class="btn-group" style="width:90%">
+//   <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)' button style="width:50%">PLACEHOLDER TEXT</>
+//   <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)' button style="width:50%">PLACEHOLDER TEXT</>
+// </div>  
+// <br>
+

@@ -1,6 +1,8 @@
 //oppdrag info (not yet)
 
+//Denne funksjonen sjekker bare hvilken bedrift som er logget inn og skriver html.
 function oppdraginfo() {
+
   let html = "";
 
   html += `<div style="background-color: #0B91E5; display: flex;">

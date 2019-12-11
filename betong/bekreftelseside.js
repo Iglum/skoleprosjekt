@@ -1,4 +1,8 @@
+
 function bekreftelse() {
+
+//denne funksjonen 
+
   let html = "";
 
   html += `
