@@ -1,6 +1,7 @@
 // let mainhtml = document.getElementById("mainContent");
 
 function loggInnSide() {
+  // console.log(model["bruker"]);
   let html = "";
 
     html += `
@@ -14,7 +15,7 @@ function loggInnSide() {
         <center>
         <input value="Epost/telefon"></input>
         <br><br>
-        <button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)">Logg inn</button>
+        <button onclick="mainHTML.innerHTML = kartside()">Logg inn</button>
         <br><br>
         <p onclick="mainHTML.innerHTML = regBedrift()">Registrer ny bruker</p>
         <br>

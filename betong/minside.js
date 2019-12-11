@@ -1,39 +1,57 @@
-function minside(innloggetbedrift) {
-    let html = "";
+function minside() {
+  let html = "";
+  let person = "";
 
-    html += `
+  innlogget == "tilbyder" ? person = "Kontaktperson" : person = "Navn";
+
+  html += `
   <div style="background-color: #0B91E5; display: flex;">
-  
   <h2 style="width: 100%; display: inline-block; color: white;">Min Side</h2></br>
   </div>
     <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
-    Kontaktperson: 
-    ${model.tilbyder[innloggetbedrift].kontaktperson}
-    </br> 
-    Firmanavn:  
-    ${model.tilbyder[innloggetbedrift].bedrift}
-    </br> 
-    Adresse:
-   ${model.tilbyder[innloggetbedrift].adresse}
+    ${person}: 
+    ${model.bruker[innloggetBruker][innlogget][person.toLowerCase()]}
     </br>
-    Orgnr:  
-    ${model.tilbyder[innloggetbedrift].orgnr}
-    </br>
-    Telefon:
-    ${model.tilbyder[innloggetbedrift].tlf}
-    </br>
-    Email: 
-    ${model.tilbyder[innloggetbedrift].email}
-    </br>
-    <button onclick='mainHTML.innerHTML = endreprofil(innloggetBedrift)'>Endre Profil</button>
-    
-    <button onclick='mainHTML.innerHTML = visHistorikk(innloggetBedrift)'>Historikk</button>
-    <button onclick='mainHTML.innerHTML = sendteTilbud(innloggetBedrift)'>Sendte tilbud</button>
-    
-    <div id="kartcontainer">
-    
-    `;
-    html += navbar;
+    `
 
-    return html;
+  if (innlogget == "tilbyder") {
+    html += `
+    Firmanavn:  
+    ${model.bruker[innloggetBruker][innlogget].bedrift}
+    </br>
+    `
+  }
+
+  html += `
+  Adresse:
+  ${model.bruker[innloggetBruker][innlogget].adresse}
+    </br >
+    `
+
+  if (innlogget == "tilbyder") {
+    html += `
+    Orgnr:
+  ${model.bruker[innloggetBruker][innlogget].orgnr}
+    </br >
+    `
+  }
+
+  html += `
+    Telefon:
+  ${model.bruker[innloggetBruker][innlogget].tlf}
+    </br >
+    Email:
+  ${model.bruker[innloggetBruker][innlogget].email}
+    </br >
+    <button onclick='mainHTML.innerHTML = endreprofil()'>Endre Profil</button>
+
+    <button onclick='mainHTML.innerHTML = visHistorikk()'>Historikk</button>
+    <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
+
+    <div id="kartcontainer">
+
+      `;
+  html += navbar;
+
+  return html;
 }
