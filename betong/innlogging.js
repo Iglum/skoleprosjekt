@@ -1,5 +1,6 @@
 // let mainhtml = document.getElementById("mainContent");
-
+//Denne funksjonen/siden har onclicks som gjør at man kommer seg innpå registrering av bedrift, som besøkende som da sender
+//- deg til det samme som man gjør når man trykket "logg inn" bare at man da får 2 alternativer LOGG INN eller REGISTRER.
 function loggInnSide() {
   let html = "";
 

@@ -1,5 +1,5 @@
 //meldinger
-
+//Denne funksjonen iterer modellen og skriver html og css deretter.
 function meldinger(innloggetbedrift, person) {
     let html = "";
 

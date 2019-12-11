@@ -1,3 +1,4 @@
+//Denne funksjonen sjekker hvilken bedrift som er innlogget og skriver ut data fra modellen deretter. 
 function minside(innloggetbedrift) {
     let html = "";
 

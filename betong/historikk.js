@@ -1,5 +1,5 @@
 
-
+//denne funksjonen itererer igjennom modellen og skriver ut html ut ifra hvilken verdi den finner.
 
 function visHistorikk(innloggetbedrift){
     let html = "";

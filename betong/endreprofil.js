@@ -1,4 +1,5 @@
-//endre profil
+//endre profil-funksjonen gjør det samme som minside. Den sjekker hvilken bedrift som er innlogget og henter ut data 
+// fra modellen deretter. 
 
 function endreprofil(innloggetbedrift) {
   let html = "";
