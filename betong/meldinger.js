@@ -5,8 +5,8 @@ function meldinger(innloggetbedrift, person) {
 
     html += `
     <div style="background-color: #0B91E5; display: flex;">
-    <button onclick="mainHTML.innerHTML = chatside(${innloggetbedrift})" style="display: inline-block; background-color: #0B91E5; border: none; font-size: 50px; color: white; width: 30px; margin-right: 20px;">⤶</button>
-    <h2 style="width: 100%; display: inline-block; color: white;">${person}</h2></br>
+    <button onclick="mainHTML.innerHTML = chatside(${innloggetbedrift})" style="display: inline-block; background-color: #0B91E5; border: none; font-size: 30px; color: white; padding-top: 5px; margin-left: 5px;">⤶</button>
+    <h2 style="width: 100%; display: inline-block; color: white; text-align: center; margin-right: 50px;">${person}</h2></br>
     </div>
     `;
 

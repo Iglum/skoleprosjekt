@@ -38,9 +38,9 @@ function sokeSide(innloggetbedrift) {
     </table>
     </div>
     </br>
-    <div onclick="mainHTML.innerHTML = oppdraginfo(${innloggetbedrift})" style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+    <div onclick="mainHTML.innerHTML = oppdraginfo(${innloggetbedrift})" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
                 <h2>${model.tilgjengeligeJobber[0].jobber[0].tittel}</h2>
-                <ul>
+                <ul style="list-style-type:none;">
                 <li></span></li>
                 <li>Område: ${model.tilgjengeligeJobber[0].jobber[0].omrode}</li>
                 <li>Dato: ${model.tilgjengeligeJobber[0].jobber[0].dato}</li>
@@ -49,9 +49,9 @@ function sokeSide(innloggetbedrift) {
                 </ul>
             </div>
             </br>
-            <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6;">
+            <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;"">
             <h2>${model.tilgjengeligeJobber[1].jobber[0].tittel}</h2>
-            <ul>
+            <ul style="list-style-type:none;">
             <li></span></li>
             <li>Område: ${model.tilgjengeligeJobber[1].jobber[0].omrode}</li>
             <li>Dato: ${model.tilgjengeligeJobber[1].jobber[0].dato}</li>

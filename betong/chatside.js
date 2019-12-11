@@ -2,7 +2,12 @@
 function chatside(innloggetbedrift) {
     let html = "";
 
-
+    html += `
+    <div style="background-color: #0B91E5; display: flex;">
+  
+    <h2 style="width: 100%; display: inline-block; color: white; text-align: center;">Meldinger</h2></br>
+    </div>
+    `
 
     for (let i = 0; i < model.chat.length; i++) {
         if (model.chat[i].bedrift == innloggetbedrift) {
@@ -12,7 +17,8 @@ function chatside(innloggetbedrift) {
                 let avsender = "";
 
                 html += `
-                    <div onclick="mainHTML.innerHTML = meldinger(${innloggetbedrift}, '${person.navn}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; padding: 15px 0 15px 0;">
+                </br>
+                    <div onclick="mainHTML.innerHTML = meldinger(${innloggetbedrift}, '${person.navn}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto;  padding-left: 10px;">
                     <h2>${person.navn}</h2>
                     `
                 let sistemelding = person.meldinger.length - 1;
