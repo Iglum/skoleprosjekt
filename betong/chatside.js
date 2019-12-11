@@ -21,18 +21,24 @@ function chatside() {
             let meldingsside = model.chat[i];
             // let person = meldingsside.personer[x];
             let deltakere = "";
+            let deltakerId = "";
             for (antall = 0; antall < meldingsside.deltakere.length; antall++){
+                // if (antall > 0){
+                //     deltakere += ", ";
+                // }
                 if (meldingsside.deltakere[antall] != innloggetBruker){
-                    try {deltakere += model.bruker[antall].kunde.navn;
+                    try {deltakere += model.bruker[meldingsside.deltakere[antall]].kunde.navn;
                     }catch{
-                        deltakere += model.bruker[antall].tilbyder.bedrift;
+                        deltakere += model.bruker[meldingsside.deltakere[antall]].tilbyder.bedrift;
                     }
+                    deltakerId += meldingsside.deltakere[antall];
                 }
             }
 
+            console.log(deltakerId);
 
             html += `
-                    <div onclick="mainHTML.innerHTML = meldinger('${deltakere}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; padding: 15px 0 15px 0;">
+                    <div onclick="mainHTML.innerHTML = meldinger('${deltakerId}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; padding: 15px 0 15px 0;">
                     <h2>${deltakere}</h2>
 
                     `
