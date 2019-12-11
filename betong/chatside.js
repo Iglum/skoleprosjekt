@@ -1,3 +1,4 @@
+//Denne funksjonene itererer igjennom modellen og skriver html
 function chatside(innloggetbedrift) {
     let html = "";
 

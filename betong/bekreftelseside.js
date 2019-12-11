@@ -1,3 +1,5 @@
+
+//denne funksjonen 
 function bekreftelse(innloggetbedrift) {
   let html = "";
 

@@ -1,5 +1,5 @@
 //oppdrag info (not yet)
-
+//Denne funksjonen sjekker bare hvilken bedrift som er logget inn og skriver html.
 function oppdraginfo(innloggetbedrift) {
   let html = "";
 

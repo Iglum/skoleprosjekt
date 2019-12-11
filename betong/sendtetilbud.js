@@ -1,5 +1,5 @@
 
-
+//Denne funksjonen itererer gjennom listen og lager html. 
 
 function sendteTilbud(innloggetbedrift){
     let html = "";

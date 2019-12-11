@@ -1,4 +1,4 @@
-
+//denne funksjonen skriver html utifra hvilken bedrift som er innlogget.
 function sokeSide(innloggetBedrift) {
     let html = "";
 
