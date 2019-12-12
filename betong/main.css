@@ -2,6 +2,15 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: #f1f1f1;
+}
+/* Development border to see divs and other stuff */
+.dev {
+  margin: auto;
+  text-align: center;
+  border: 3px solid rebeccapurple;
+}
 
 header {
   background-color: #666;
@@ -31,7 +40,6 @@ nav {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background-color: #f1f1f1;
 }
 
 @media (max-width: 600px) {
@@ -54,12 +62,6 @@ nav {
   width: 100%;
 }
 
-.center {
-  margin: auto;
-  text-align: center;
-  border: 3px solid rebeccapurple;
-}
-
 img {
   display: block;
   margin-left: auto;
@@ -72,6 +74,8 @@ img {
   margin-right: auto;
 }
 
+/* Navigation bar stuff */
+
 .navbar {
   overflow: hidden;
   background-color: #0b91e5;
@@ -83,20 +87,20 @@ img {
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #54a2d3;
   text-align: center;
-  padding: 15px 16px;
+  padding: 5px 5px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .navbar a:hover {
-  background: #f1f1f1;
+  background: #54a2d3;
   color: black;
 }
 
 .navbar a.active {
-  background-color: rgb(27, 143, 214);
+  background-color: rgb(28, 170, 151);
   color: white;
 }
 

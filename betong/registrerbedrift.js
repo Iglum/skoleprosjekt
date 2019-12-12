@@ -68,10 +68,10 @@ function regBedrift() {
     </table>
     </br></br>
     <button onclick="mainHTML.innerHTML = loggInnSide()">Avbryt</button> <button onclick="mainHTML.innerHTML = kartside()">Fullfør</button>
+    <img src="svgbilbord.svg" alt="">
     </div>
 
-    
-    <div style="top: 550px; position: absolute">${model.svg[4].svg}</div>
+
     `
 
     return html;
