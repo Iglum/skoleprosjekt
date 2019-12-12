@@ -427,6 +427,19 @@ let navbar = `
             <button onclick="mainHTML.innerHTML = minside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${model.svg[3].svg}</button>
 `
 
+
+let navbarlite = `
+  
+  <div class="navbar">
+  <a href="" class="active buttonsize">${model.svg[0].svg}</a>
+  <a href="#home" class="buttonsize">${model.svg[1].svg}</a>
+  <a href="#home" class="buttonsize">${model.svg[2].svg}</a>
+  <a href="#home" class="buttonsize">${model.svg[3].svg}</a>
+  </div>
+  
+  `;
+
+
 // !!! NAV BAR INNLOGGET!!! //
 //<button onclick="mainHTML.innerHTML = kartside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${svgkartikon}</button>
 //    <button class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * knappebredde)}px;">${svgsokikon}</button>

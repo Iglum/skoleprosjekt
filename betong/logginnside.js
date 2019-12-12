@@ -6,14 +6,13 @@ function loggInnSide() {
   let html = "";
 
     html += `
-        
         <div id="innlogging">
+        <center>
         <div style="background-color: #0B91E5; height: 30px"></div>
         <img src="https://www.betongsentrum.no/wp-content/uploads/2019/09/Bestillno3-1024x123.png" style="width: 360px; height: 50px;">
         <br>
         <br>
         <br>
-        <center>
         <br><br><br>
         <input id="innloggInput" type="text" value="Epost/telefon" onclick="tomInput(this)" style="width: 70%"></input>
         <br><br>
