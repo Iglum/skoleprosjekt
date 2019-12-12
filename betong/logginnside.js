@@ -5,7 +5,7 @@ function loggInnSide() {
   // console.log(model["bruker"]);
   let html = "";
 
-    html += `
+  html += `
         
         <div id="innlogging">
         <div style="background-color: #0B91E5; height: 30px"></div>
@@ -16,13 +16,12 @@ function loggInnSide() {
         <center>
         <br><br><br>
         <input id="innloggInput" type="text" value="Epost/telefon" onclick="tomInput(this)" style="width: 70%"></input>
+        </br>
+        <input id="passordInput" type="text" value="Passord" onclick="tomInput(this)" style="width: 70%"></input>
         <br><br>
-        <input id="radioknapp" type="radio" name="brukertype" value="kunde"> Kunde
-        <input id="radio2" type="radio" name="brukertype" value="tilbyder"> Tilbyder
-        <br>
 
         <div class="button-group" style="margin: auto">
-          <button onclick="loggInn(), mainHTML.innerHTML = kartside()" style="width:50%; display: flex; justify-content: center">Logg inn</>
+        <button onclick="loggInn()" style="width:50%; display: flex; justify-content: center">Logg inn</>
         </div> 
         </br>
         <div class="button-group" style="margin: auto">
@@ -37,7 +36,7 @@ function loggInnSide() {
 
         </center>
     </div>
-    <div style="background-color: #0B91E5; height: 58px; width: 100%; position: absolute; top: ${640-58}px;"></div>
+    <div style="background-color: #0B91E5; height: 58px; width: 100%; position: absolute; top: ${640 - 58}px;"></div>
     `
   return html;
 }
@@ -46,17 +45,49 @@ let brukertype = "";
 
 // console.log(document.getElementById("radioknapp").value);
 
-function tomInput(felt){
+function tomInput(felt) {
   felt.value = "";
 }
 
-function loggInn(){
+function loggInn() {
   let innloggInput = document.getElementById("innloggInput").value;
-  console.log(innloggInput);
+  let passordInput = document.getElementById("passordInput").value;
+  let mail = "";
+  let passord = "";
+  let brukertype = "";
+  // console.log(innloggInput);
   // console.log(document.getElementById("radioknapp").checked);
 
-  // for (i = 0; i < model.bruker)
+  for (i = 0; i < model.bruker.length; i++) {
 
+    try{
+      mail = model.bruker[i].kunde.email;
+      passord = model.bruker[i].kunde.passord;
+      brukertype = "kunde";
+    }catch{
+      mail = model.bruker[i].tilbyder.email;
+      passord = model.bruker[i].tilbyder.passord;
+      brukertype = "tilbyder";
+    }
+
+
+    if (mail == innloggInput && passord == passordInput && brukertype == "kunde") {
+      innloggetBruker = i;
+      innlogget = brukertype;
+      break;
+    } else if (mail == innloggInput && passord == passordInput && brukertype == "tilbyder") {
+      innloggetBruker = i;
+      innlogget = brukertype;
+      break;
+    }
+  }
+
+  if (innlogget == "kunde" || innlogget == "tilbyder"){
+    mainHTML.innerHTML = kartside();
+  } else {
+    console.log("Feil epost og/eller passord");
+  }
+  
 }
 
 //<div style="background-color: #0B91E5; height: 58px; top: ${screen.height-this.height};  "></div>

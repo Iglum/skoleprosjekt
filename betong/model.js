@@ -15,6 +15,7 @@ let model = {
                 orgnr: "921743432",
                 faktadr: "Hvittingfossveien 254, 3089 Holmestrand",
                 email: "post@betongsentrum.no",
+                passord: "123",
                 tjenester: {
                     snorydding: [true, "spade", "snofreser", "traktor"],
                     betong: [true, "forskaling", "gulvstoping"]
@@ -35,6 +36,7 @@ let model = {
                 orgnr: "921587456",
                 faktadr: "Løkeveien 265, 3160 Stokke",
                 email: "post@murersorensen.no",
+                passord: "123",
                 tjenester: {
                     snorydding: [true, "spade", "snofreser", "traktor"],
                     betong: [false]
@@ -55,6 +57,7 @@ let model = {
                 orgnr: "365985412",
                 faktadr: "Bettånggata 14, 1452 Tong",
                 email: "post@kjertilsbetong.no",
+                passord: "123",
                 tjenester: {
                     snorydding: [true, "spade", "snofreser", "traktor"],
                     betong: [true, "forskaling", "gulvstøping"]
@@ -69,7 +72,8 @@ let model = {
                 navn: "Martin Brygmann",
                 adresse: "Ryghs vei 23, 0785 Oslo",
                 tlf: ["986 62 319"],
-                email: "martin@brygmann.no"
+                email: "martin@brygmann.no",
+                passord: "123"
             }
         },
 
@@ -80,7 +84,8 @@ let model = {
                 navn: "Pia Amundsen",
                 adresse: "Skipperløkka 5, 3260 Larvik",
                 tlf: ["900 70 967"],
-                email: "titovn99elskerkanin@piczo.no"
+                email: "titovn99elskerkanin@piczo.no",
+                passord: "123"
             }
         },
 
@@ -91,7 +96,8 @@ let model = {
                 navn: "Per Hansen",
                 adresse: "Skinmoveien 2, 3270 Sandefjord",
                 tlf: ["492 65 882"],
-                email: "per.hansen@gmail.com"
+                email: "per.hansen@gmail.com",
+                passord: "123"
             }
         },
 
@@ -102,7 +108,8 @@ let model = {
                 navn: "Anita Dahl",
                 adresse: "Ragnhildrødveien 40, 3160 Stokke",
                 tlf: ["447 55 269"],
-                email: "anitadahl@gmail.com"
+                email: "anitadahl@gmail.com",
+                passord: "123"
             }
         },
 
@@ -113,7 +120,8 @@ let model = {
                 navn: "Kjell Olsen",
                 adresse: "Vennerødveien 20, 3158 Andebu",
                 tlf: ["963 58 002"],
-                email: "kjell72@hotmail.com"
+                email: "kjell72@hotmail.com",
+                passord: "123"
             }
         },
 
@@ -124,7 +132,8 @@ let model = {
                 navn: "Ole Petter Sjøbrenn",
                 adresse: "Skuggedalveien 37, 3270 Larvik",
                 tlf: ["416 19 671"],
-                email: "sjobrenn98@gmail.com"
+                email: "sjobrenn98@gmail.com",
+                passord: "123"
             }
         },
 
@@ -238,15 +247,53 @@ let model = {
 
                 {
                     avsender: 0,
-                    emne: "RE: Spørsmål ang. støping",
+                    emne: "Spørsmål ang. støping",
                     innhold: "Hei, Per. Dette kan vi fikse blablabla"
                 },
 
                 {
                     avsender: 5,
-                    emne: "RE:RE: Spørsmål ang. støping",
+                    emne: "Spørsmål ang. støping",
                     innhold: "Dette höres jo helt rått ut! Dittendittenditten"
+                },
+
+                {
+                    avsender: 0,
+                    emne: "Spørsmål ang. støping",
+                    innhold: "Dittenduu. Dette blir veldig bra. Vi leverer på følgende adresse: ***, denne datoen, til denne tiden."
+                },
+
+                {
+                    avsender: 5,
+                    emne: "Spørsmål ang. støping",
+                    innhold: "Dummydummydummy"
+                },
+
+                {
+                    avsender: 0,
+                    emne: "Spørsmål ang. støping",
+                    innhold: "Moar Dummydummydummy"
+                },
+
+                {
+                    avsender: 5,
+                    emne: "Spørsmål ang. støping",
+                    innhold: "EvenMoar Dummydummydummy"
+                },
+
+                {
+                    avsender: 0,
+                    emne: "Spørsmål ang. støping",
+                    innhold: "Moar Dummydummydummy"
+                },
+
+                {
+                    avsender: 5,
+                    emne: "Spørsmål ang. støping",
+                    innhold: "EvenMoar Dummydummydummy"
                 }
+
+                
             ]
         },
 
@@ -262,7 +309,7 @@ let model = {
 
                 {
                     avsender: 0,
-                    emne: "RE: Platting",
+                    emne: "Platting",
                     innhold:
                         "Hei, Anita. Vi vil i så fall løse det på følgende måte: blablabla"
                 }
@@ -282,7 +329,7 @@ let model = {
 
                 {
                     avsender: 0,
-                    emne: "RE: Misfornøyd",
+                    emne: "Misfornøyd",
                     innhold:
                         "Hei, Kjell. Synd å høre at du ikke ble fornøyd. Hva kan vi gjøre for blablabla"
                 }
@@ -302,7 +349,7 @@ let model = {
 
                 {
                     avsender: 3,
-                    emne: "RE: Fett",
+                    emne: "Fett",
                     innhold:
                         "Hallå. Trenger du no betong?"
                 }
@@ -413,8 +460,8 @@ let model = {
 };
 
 
-let innloggetBruker = 0;
-let innlogget = "tilbyder";
+let innloggetBruker;
+let innlogget;
 
 let knappebredde = 90;
 let knappehoyde = 58;

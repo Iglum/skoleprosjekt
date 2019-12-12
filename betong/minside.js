@@ -25,7 +25,7 @@ function minside() {
   if (innlogget == "tilbyder") {
     html += `
     <b>Firmanavn:</b>  
-    ${model.bruker[innloggetBruker][innlogget].bedrift}
+    </br>${model.bruker[innloggetBruker][innlogget].bedrift}
     </br>
     `
   }
