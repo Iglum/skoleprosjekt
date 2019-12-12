@@ -3,6 +3,13 @@
   margin: 0;
 }
 
+/* Development border to see divs and other stuff */
+.dev {
+  margin: auto;
+  text-align: center;
+  border: 3px solid rebeccapurple;
+}
+
 header {
   background-color: #666;
   padding: 5px;
@@ -54,12 +61,6 @@ nav {
   width: 100%;
 }
 
-.center {
-  margin: auto;
-  text-align: center;
-  border: 3px solid rebeccapurple;
-}
-
 img {
   display: block;
   margin-left: auto;
@@ -72,9 +73,7 @@ img {
   margin-right: auto;
 }
 
-
 /* Navigation bar stuff */
-
 
 .navbar {
   overflow: hidden;
