@@ -16,7 +16,7 @@ function loggInnSide() {
         <br><br><br>
         <input id="innloggInput" type="text" value="Epost/telefon" onclick="tomInput(this)" style="width: 70%"></input>
         </br>
-        <input id="passordInput" type="text" value="Passord" onclick="tomInput(this)" style="width: 70%"></input>
+        <input id="passordInput" type="password" value="Passord" onclick="tomInput(this)" style="width: 70%"></input>
         <br><br>
 
         <div class="button-group" style="margin: auto">
