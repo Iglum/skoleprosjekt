@@ -8,16 +8,19 @@
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="kart.css" />
   <link rel="stylesheet" href="endreprofil.css" />
+  <link rel="stylesheet" href="buttons.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
   <title>Bestill.no</title>
 </head>
 
-<body onload="document.getElementById('mainContent').innerHTML = loggInnSide(innloggetBedrift)">
+<body onload="document.getElementById('mainContent').innerHTML = loggInnSide()">
   <script src="model.js"></script>
   <script src="startside.js"></script>
   <script src="kart.js"></script>
   <script src="minside.js"></script>
   <script src="endreprofil.js"></script>
-  <script src="innlogging.js"></script>
+  <script src="logginnside.js"></script>
   <script src="historikk.js"></script>
   <script src="registrerbedrift.js"></script>
   <script src="chatside.js"></script>
@@ -29,6 +32,10 @@
   <script src="sokeside.js"></script>
 
   <div class="mainContent" id="mainContent"></div>
+
+  <div class="navbar"></div>
+
+
 
   <script>
     let mainHTML = document.getElementById("mainContent");

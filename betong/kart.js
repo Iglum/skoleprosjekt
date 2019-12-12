@@ -3,20 +3,25 @@
 
 
 
-function kartside(innloggetbedrift) {
+//Denne funksjonene sjekker innlogget bedrift, hvis man ikke er innlogget så vil man få 2 valg, logg inn eller registrer so
+function kartside() {
+
     let html = "";
 
     html += `
-        <div id="kartcontainer">
-        <input type="text" style="position: absolute; width: 340px; margin-left: 10px;" value="Søk:"></input>
-        <img src="kart.png" style="width: 360px; height: ${bildehoyde}px;" onclick="popupjobb(document.getElementById('popup'))"></img>
+        <center>
+        <div id="kartcontainer" class="sticky">
+        <input type="text" style="width: 50%;" value="Søk:"></input>
+        </div>
+        <img src="kart.png" onclick="popupjobb(document.getElementById('popup'))"></img>
+        </center>
         `
 
-    if (innloggetbedrift!= null && (innloggetbedrift).constructor === Number) {
+    if (innloggetBruker!= null && (innloggetBruker).constructor === Number) {
         html += navbar;
     } else {
         html += `
-            <button onclick="mainHTML.innerHTML = kartside(innloggetBedrift)" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">Logg inn</button>
+            <button onclick="mainHTML.innerHTML = kartside()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">Logg inn</button>
             <button onclick="mainHTML.innerHTML = regBedrift()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * (knappebredde*2))}px;">Registrer deg</button>
             `
     }
