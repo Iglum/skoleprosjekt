@@ -72,6 +72,10 @@ img {
   margin-right: auto;
 }
 
+
+/* Navigation bar stuff */
+
+
 .navbar {
   overflow: hidden;
   background-color: #0b91e5;
@@ -83,20 +87,20 @@ img {
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #54a2d3;
   text-align: center;
-  padding: 15px 16px;
+  padding: 5px 5px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .navbar a:hover {
-  background: #f1f1f1;
+  background: #54a2d3;
   color: black;
 }
 
 .navbar a.active {
-  background-color: rgb(27, 143, 214);
+  background-color: rgb(28, 170, 151);
   color: white;
 }
 
