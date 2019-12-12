@@ -9,9 +9,12 @@ function kartside() {
     let html = "";
 
     html += `
-        <div id="kartcontainer">
-        <input type="text" style="position: absolute; width: 340px; margin-left: 10px;" value="Søk:"></input>
-        <img src="kart.png" style="width: 360px; height: ${bildehoyde}px;" onclick="popupjobb(document.getElementById('popup'))"></img>
+        <center>
+        <div id="kartcontainer" class="sticky">
+        <input type="text" style="width: 50%;" value="Søk:"></input>
+        </div>
+        <img src="kart.png" onclick="popupjobb(document.getElementById('popup'))"></img>
+        </center>
         `
 
     if (innloggetBruker!= null && (innloggetBruker).constructor === Number) {

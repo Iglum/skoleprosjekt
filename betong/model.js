@@ -455,17 +455,26 @@ let knappebredde = 90;
 let knappehoyde = 58;
 let bildehoyde = 640;
 
-let navbar = `
+let navbar1 = `
 <button onclick="mainHTML.innerHTML = kartside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">${model.svg[0].svg}</button>
             <button onclick="mainHTML.innerHTML = sokeSide(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * knappebredde)}px;">${model.svg[1].svg}</button>
             <button onclick="mainHTML.innerHTML = chatside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(2 * knappebredde)}px;">${model.svg[2].svg}</button>
             <button onclick="mainHTML.innerHTML = minside(${innloggetBruker})" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(3 * knappebredde)}px;">${model.svg[3].svg}</button>
 `
 
+let navbar = `
+<div  class="navbar">
+<button onclick="mainHTML.innerHTML = kartside(${innloggetBruker})" class="kartknapper buttonsize">${model.svg[0].svg}</button>
+<button onclick="mainHTML.innerHTML = sokeSide(${innloggetBruker})" class="kartknapper buttonsize">${model.svg[1].svg}</button>
+<button onclick="mainHTML.innerHTML = chatside(${innloggetBruker})" class="kartknapper buttonsize">${model.svg[2].svg}</button>
+<button onclick="mainHTML.innerHTML = minside(${innloggetBruker})" class="kartknapper buttonsize">${model.svg[3].svg}</button>
+</div>
+`
+
 
 let navbarlite = `
   
-  <div class="navbar">
+  <div class="navbar kartknapper">
   <a href="" class="active buttonsize">${model.svg[0].svg}</a>
   <a href="#home" class="buttonsize">${model.svg[1].svg}</a>
   <a href="#home" class="buttonsize">${model.svg[2].svg}</a>
