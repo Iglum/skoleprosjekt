@@ -30,7 +30,7 @@ function loggInnSide() {
         <p onclick="">Glemt passord?</p>
         </br></br></br>
         <div class="button-group" style="margin: auto">
-          <button onclick="mainHTML.innerHTML = kartside()" style="width:50%; display: flex; justify-content: center">Besøkende</>
+          <button onclick="innloggetBruker = 0, innlogget = 'tilbyder', mainHTML.innerHTML = kartside()" style="width:50%; display: flex; justify-content: center">Besøkende</>
         </div>
 
         </center>
