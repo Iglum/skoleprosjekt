@@ -14,42 +14,50 @@ function regBedrift() {
     <table>
     <tr>
         <th>Navn på bedrift:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbbedrift" type="text"><th>
     </tr>
     <tr>
         <th>Kontaktperson:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbkontaktperson" type="text"><th>
     </tr>
     <tr>
         <th>Epostadresse:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbemail" type="text"><th>
     </tr>
     <tr>
         <th>Telefonnummer:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbtlf" type="text"><th>
     </tr>
     </br>
     <tr>
         <th>Antall ansatte:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbansatte" type="text"><th>
     </tr>
 
     <tr>
         <th>Adresse:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbadresse" type="text"><th>
     </tr>
     <tr>
         <th>Hjemmeside:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbhjemmeside" type="text"><th>
     </tr>
     <tr>
         <th>Org.nr.:</th> 
-        <th><input type="text"><th>
+        <th><input id="rborgnr" type="text"><th>
     </tr>
     </br>
     <tr>
         <th>Faktureringsadr.:</th> 
-        <th><input type="text"><th>
+        <th><input id="rbfaktadr" type="text"><th>
+    </tr>
+    <tr>
+        <th>Passord:</th> 
+        <th><input id="rbpw1" type="password"><th>
+    </tr>
+    <tr>
+        <th>Gjenta passord:</th> 
+        <th><input id="rbpw2" type="password"><th>
     </tr>
     </table>
     </br></br>
@@ -75,7 +83,7 @@ function regBedrift() {
     </tr>
     </table>
     </br></br>
-    <button onclick="mainHTML.innerHTML = loggInnSide()">Avbryt</button> <button onclick="mainHTML.innerHTML = kartside()">Fullfør</button>
+    <button onclick="mainHTML.innerHTML = loggInnSide()">Avbryt</button> <button onclick="regBedriftModel()">Fullfør</button>
     
     </div>
 
