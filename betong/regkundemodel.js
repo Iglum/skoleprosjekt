@@ -1,12 +1,12 @@
 
 function regKundeModel() {
 
-    let navn = document.getElementById('rbnavn').value;
-    let adresse = document.getElementById('rbadresse').value;
-    let mail = document.getElementById('rbemail').value;
-    let tlf = document.getElementById('rbtlf').value;
-    let pw1 = document.getElementById('rbpw1').value;
-    let pw2 = document.getElementById('rbpw2').value
+    let navn = document.getElementById('rknavn').value;
+    let adresse = document.getElementById('rkadresse').value;
+    let mail = document.getElementById('rkemail').value;
+    let tlf = document.getElementById('rktlf').value;
+    let pw1 = document.getElementById('rkpw1').value;
+    let pw2 = document.getElementById('rkpw2').value
 
 
 

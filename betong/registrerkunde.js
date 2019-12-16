@@ -14,29 +14,29 @@ function regKunde() {
     <table>
     <tr>
         <th>Ditt navn:</th> 
-        <th><input id="rbnavn" type="text"><th>
+        <th><input id="rknavn" type="text"><th>
     </tr>
     <tr>
         <th>Adresse:</th> 
-        <th><input id="rbadresse" type="text"><th>
+        <th><input id="rkadresse" type="text"><th>
     </tr>
     <tr>
         <th>Epostadresse:</th> 
-        <th><input id="rbemail" type="text"><th>
+        <th><input id="rkemail" type="text"><th>
     </tr>
 
     <tr>
         <th>Telefonnummer:</th> 
-        <th><input id="rbtlf" type="text"><th>
+        <th><input id="rktlf" type="text"><th>
     </tr>
 
     <tr>
         <th>Passord:</th> 
-        <th><input id="rbpw1" type="password"><th>
+        <th><input id="rkpw1" type="password"><th>
     </tr>
     <tr>
         <th>Gjenta passord:</th> 
-        <th><input id="rbpw2" type="password"><th>
+        <th><input id="rkpw2" type="password"><th>
     </tr>
     </table>
     </br>

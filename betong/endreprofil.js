@@ -23,44 +23,44 @@ function endreprofil() {
     <div class="wrapper font">
     <center>
     ${person}:
-    <input type="text" name="${person}" value="${model.bruker[innloggetBruker][innlogget][person.toLowerCase()]}">
+    <input id="endrenavn" type="text" name="${person}" value="${model.bruker[innloggetBruker][innlogget][person.toLowerCase()]}">
     `
 
   if (innlogget == "tilbyder") {
     html += `
     Firmanavn:
     <br>
-    <input type="text" name="bedrift" value="${model.bruker[innloggetBruker][innlogget].bedrift}"></input>`;
+    <input id="endrebedrift" type="text" name="bedrift" value="${model.bruker[innloggetBruker][innlogget].bedrift}"></input>`;
   }
 
   html += `
     Adresse:
     <br>
-    <input type="text" name="adresse" value="${model.bruker[innloggetBruker][innlogget].adresse}">
+    <input id="endreadresse" type="text" name="adresse" value="${model.bruker[innloggetBruker][innlogget].adresse}">
     `
 
   if (innlogget == "tilbyder") {
     html += `
       Faktureringsdresse:
     <br>
-    <input type="text" name="faktadr" value="${model.bruker[innloggetBruker][innlogget].faktadr}">
+    <input id="endrefaktadresse" type="text" name="faktadr" value="${model.bruker[innloggetBruker][innlogget].faktadr}">
     Organisasjonsnr:
     <br>
-    <input type="text" name="orgnr" value="${model.bruker[innloggetBruker][innlogget].orgnr}">
+    <input id="endreorgnr" type="text" name="orgnr" value="${model.bruker[innloggetBruker][innlogget].orgnr}">
     `
   }
 
   html += `
   Telefon(valgfritt):
   <br>
-    <input type="text" name="tlf" value="${model.bruker[innloggetBruker][innlogget].tlf}">
+    <input id="endretlf" type="text" name="tlf" value="${model.bruker[innloggetBruker][innlogget].tlf}">
       Email:
-    <input type="text" name="email" value="${model.bruker[innloggetBruker][innlogget].email}">
+    <input id="endreemail" type="text" name="email" value="${model.bruker[innloggetBruker][innlogget].email}">
         <br>
 </center>
 
 <center><div class="button-group" style="margin: auto;">
-<button onclick='mainHTML.innerHTML = minside()'>Lagre</button>
+<button onclick='lagreEndringer()'>Lagre</button>
 <button onclick='mainHTML.innerHTML = minside()'>Avbryt</button>
 </div></center>
     
