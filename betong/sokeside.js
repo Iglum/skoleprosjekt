@@ -39,32 +39,30 @@ function sokeSide() {
     </div>
     </br>
     `
+    for(let i = 0; i < model.tilgjengeligeJobber.length; i++){
+        let ledigeJobber = model.tilgjengeligeJobber[i].jobber;
+        for(let j = 0; j < ledigeJobber.length; j++){
+            let ledigJobb = ledigeJobber[j];
 
-    for (let i= 0; i < model.tilgjengeligeJobber.length; i++){
-        if (model.tilgjengeligeJobber[i].kunde == innloggetBruker){
-            console.log(let i= 0; i < model.tilgjengeligeJobber.length; i++);
-            let tilgjengeligeJobber = model.tilgjengeligeJobber[i];
-            for (let x = tilgjengeligeJobber.jobber.lenght-1; x >= 0; x--){
-                html +=
-                `
+            html +=
+                ` 
                 <div onclick="mainHTML.innerHTML = oppdraginfo()" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
             
-                            <h2>${tilgjengeligeJobber.jobber[x].tittel}</h2>
+                            <h2>${ledigJobb.tittel}</h2>
                             <ul style="list-style-type:none;">
                             <li></span></li>
-                            <li>Område: ${tilgjengeligeJobber.jobber[x].omrode}</li>
-                            <li>Dato: ${tilgjengeligeJobber[x].dato}</li>
+                            <li>Område: ${ledigJobb.omrode}</li>
+                            <li>Dato: ${ledigJobb.dato}</li>
                             </br>
                         </ul>
                     </div>
                 `
-            }
         }
     }
-
-
+    
+    
     html += navbar;
-
+    
     return html;
 }
 

@@ -152,7 +152,7 @@ let model = {
 
     tilgjengeligeJobber: [
         {
-            kunde: "Kjetil Nordmann",
+            kunde: 4,
             jobber: [
                 {
                     tittel: "Gulvstøping til Garasje",
@@ -164,7 +164,7 @@ let model = {
         },
 
         {
-            kunde: "Martin Brygmann",
+            kunde: 3,
             jobber: [
                 {
                     tittel: "Forskalling",
