@@ -5,6 +5,7 @@ let model = {
     bruker: [
         {
             id: 0,
+            brukertype: ['tilbyder'],
             tilbyder: {
                 bedrift: "Betongsentrum AS",
                 kontaktperson: "Jim Hansen",
@@ -26,6 +27,7 @@ let model = {
 
         {
             id: 1,
+            brukertype: ['tilbyder'],
             tilbyder: {
                 bedrift: "Murer Sørensen AS",
                 kontaktperson: "Remi Sørensen",
@@ -47,6 +49,7 @@ let model = {
 
         {
             id: 2,
+            brukertype: ['tilbyder'],
             tilbyder: {
                 bedrift: "Kjetils Betong AS",
                 kontaktperson: "Kjetil Karlsen",
@@ -68,6 +71,7 @@ let model = {
 
         {
             id: 3,
+            brukertype: ['kunde'],
             kunde: {
                 navn: "Martin Brygmann",
                 adresse: "Ryghs vei 23, 0785 Oslo",
@@ -80,6 +84,7 @@ let model = {
 
         {
             id: 4,
+            brukertype: ['kunde'],
             kunde: {
                 navn: "Pia Amundsen",
                 adresse: "Skipperløkka 5, 3260 Larvik",
@@ -92,6 +97,7 @@ let model = {
 
         {
             id: 5,
+            brukertype: ['kunde'],
             kunde: {
                 navn: "Per Hansen",
                 adresse: "Skinmoveien 2, 3270 Sandefjord",
@@ -104,6 +110,7 @@ let model = {
 
         {
             id: 6,
+            brukertype: ['kunde'],
             kunde: {
                 navn: "Anita Dahl",
                 adresse: "Ragnhildrødveien 40, 3160 Stokke",
@@ -116,6 +123,7 @@ let model = {
 
         {
             id: 7,
+            brukertype: ['kunde'],
             kunde: {
                 navn: "Kjell Olsen",
                 adresse: "Vennerødveien 20, 3158 Andebu",
@@ -128,6 +136,7 @@ let model = {
 
         {
             id: 8,
+            brukertype: ['kunde'],
             kunde: {
                 navn: "Ole Petter Sjøbrenn",
                 adresse: "Skuggedalveien 37, 3270 Larvik",
