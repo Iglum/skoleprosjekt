@@ -21,6 +21,10 @@ function regBedrift() {
         <th><input type="text"><th>
     </tr>
     <tr>
+        <th>Epostadresse:</th> 
+        <th><input type="text"><th>
+    </tr>
+    <tr>
         <th>Telefonnummer:</th> 
         <th><input type="text"><th>
     </tr>
