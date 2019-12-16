@@ -13,7 +13,7 @@ function chatside() {
     <div style="background-color: #0B91E5; display: flex;">
   
     <h2 style="width: 100%; display: inline-block; color: white; text-align: center;">Meldinger</h2></br>
-    </div>
+    </div></br>
     `
 
     for (let i = 0; i < model.chat.length; i++) {
@@ -38,7 +38,7 @@ function chatside() {
             console.log(deltakerId);
 
             html += `
-                    <div onclick="mainHTML.innerHTML = meldinger('${deltakerId}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; padding: 15px 0 15px 0;">
+                    <div onclick="mainHTML.innerHTML = meldinger('${deltakerId}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
                     <h2>${deltakere}</h2>
 
                     `
