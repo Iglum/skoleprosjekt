@@ -24,7 +24,7 @@ function loggInnSide() {
         </div> 
         </br>
         <div class="button-group" style="margin: auto">
-          <button onclick="mainHTML.innerHTML = regBedrift()" style="width:50%; display: flex; justify-content: center">Registrer deg</>
+          <button onclick="mainHTML.innerHTML = regBruker()" style="width:50%; display: flex; justify-content: center">Registrer deg</>
         </div>
         </br>
         <p onclick="">Glemt passord?</p>
