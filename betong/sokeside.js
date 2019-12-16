@@ -38,32 +38,57 @@ function sokeSide() {
     </table>
     </div>
     </br>
+    `
 
-    <div onclick="mainHTML.innerHTML = oppdraginfo()" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
+    for (let i= 0; i < model.tilgjengeligeJobber.length; i++){
+        if (model.tilgjengeligeJobber[i].kunde == innloggetBruker){
+            console.log(let i= 0; i < model.tilgjengeligeJobber.length; i++);
+            let tilgjengeligeJobber = model.tilgjengeligeJobber[i];
+            for (let x = tilgjengeligeJobber.jobber.lenght-1; x >= 0; x--){
+                html +=
+                `
+                <div onclick="mainHTML.innerHTML = oppdraginfo()" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
+            
+                            <h2>${tilgjengeligeJobber.jobber[x].tittel}</h2>
+                            <ul style="list-style-type:none;">
+                            <li></span></li>
+                            <li>Område: ${tilgjengeligeJobber.jobber[x].omrode}</li>
+                            <li>Dato: ${tilgjengeligeJobber[x].dato}</li>
+                            </br>
+                        </ul>
+                    </div>
+                `
+            }
+        }
+    }
 
-                <h2>${model.tilgjengeligeJobber[0].jobber[0].tittel}</h2>
-                <ul style="list-style-type:none;">
-                <li></span></li>
-                <li>Område: ${model.tilgjengeligeJobber[0].jobber[0].omrode}</li>
-                <li>Dato: ${model.tilgjengeligeJobber[0].jobber[0].dato}</li>
-                </br>
-               
-                </ul>
-            </div>
-            </br>
-            <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;"">
-            <h2>${model.tilgjengeligeJobber[1].jobber[0].tittel}</h2>
-            <ul style="list-style-type:none;">
-            <li></span></li>
-            <li>Område: ${model.tilgjengeligeJobber[1].jobber[0].omrode}</li>
-            <li>Dato: ${model.tilgjengeligeJobber[1].jobber[0].dato}</li>
-            </br>
-           
-            </ul>
-        </div>
-    `;
 
     html += navbar;
 
     return html;
 }
+
+// `
+// <div onclick="mainHTML.innerHTML = oppdraginfo()" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
+
+//             <h2>${model.tilgjengeligeJobber[0].jobber[0].tittel}</h2>
+//             <ul style="list-style-type:none;">
+//             <li></span></li>
+//             <li>Område: ${model.tilgjengeligeJobber[0].jobber[0].omrode}</li>
+//             <li>Dato: ${model.tilgjengeligeJobber[0].jobber[0].dato}</li>
+//             </br>
+           
+//             </ul>
+//         </div>
+//         </br>
+//         <div style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;"">
+//         <h2>${model.tilgjengeligeJobber[1].jobber[0].tittel}</h2>
+//         <ul style="list-style-type:none;">
+//         <li></span></li>
+//         <li>Område: ${model.tilgjengeligeJobber[1].jobber[0].omrode}</li>
+//         <li>Dato: ${model.tilgjengeligeJobber[1].jobber[0].dato}</li>
+//         </br>
+       
+//         </ul>
+//     </div>
+// `
