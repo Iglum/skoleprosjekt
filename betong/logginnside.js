@@ -27,7 +27,7 @@ function loggInnSide() {
           <button onclick="mainHTML.innerHTML = regBruker()" style="width:50%; display: flex; justify-content: center">Registrer deg</>
         </div>
         </br>
-        <p onclick="">Glemt passord?</p>
+        <p onclick="mainHTML.innerHTML = glemtPassord()">Glemt passord?</p>
         </br></br></br>
         <div class="button-group" style="margin: auto">
           <button onclick="innloggetBruker = 0, innlogget = 'tilbyder', mainHTML.innerHTML = kartside()" style="width:50%; display: flex; justify-content: center">Besøkende</>
