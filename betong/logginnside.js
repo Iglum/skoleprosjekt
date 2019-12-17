@@ -60,12 +60,11 @@ function loggInn() {
 
     mail = model.bruker[i][model.bruker[i].brukertype].email;
     passord = model.bruker[i][model.bruker[i].brukertype].passord;
-    brukertype = model.bruker[i].brukertype;
 
 
     if (mail == innloggInput && passord == passordInput) {
       innloggetBruker = i;
-      innlogget = brukertype;
+      innlogget = model.bruker[i].brukertype;
       break;
     }
   }
