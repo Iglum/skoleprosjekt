@@ -6,11 +6,20 @@ function oppdraginfo() {
   let html = "";
 
   html += `<div style="background-color: #0B91E5; display: flex;">
-    <button onclick="mainHTML.innerHTML = minside()" style="display: inline-block; background-color: #0B91E5; border: none; font-size: 25px; color: white; width: 30px;">⤶</button>
-    <h2 style="width: 100%; display: inline-block; color: white;">Endre Profil</h2></br>
-    </div>
-    <h3>${model.bruker[innloggetBruker][innlogget].kontaktperson}</h3>
-    <h3>${model.bruker[innloggetBruker][innlogget].adresse}</h3>
+    <button onclick="mainHTML.innerHTML = sokeSide()" style="display: inline-block; background-color: #0B91E5; border: none; font-size: 25px; color: white; width: 30px;">⤶</button>
+    <h2 style="width: 100%; display: inline-block; color: white; text-align: center;">Informasjon om oppdrag</h2></br>
+    </div></br>
+    <center><h2>${model.tilgjengeligeJobber[0].jobber[0].tittel}</center></h2>
+    <div style="font-size: 20px; margin-left: 10px;">
+    </br>
+    <ul style="list-style-type:none;">
+      <li><b>Navn:</b> ${model.bruker[3].kunde.navn}</li>
+      <li><b>Adresse:</b> ${model.bruker[3].kunde.adresse}</li>
+      <li><b>Dato for oppdrag:</b> ${model.tilgjengeligeJobber[0].jobber[0].dato}</li>
+      </br>
+      <li>${model.tilgjengeligeJobber[0].jobber[0].beskrivelse}</li>
+      </ul>
+      </div>
     `;
 
 
