@@ -5,7 +5,7 @@ function loggInnSide() {
   // console.log(model["bruker"]);
   let html = "";
 
-    html += `
+  html += `
         <div id="innlogging">
         <center>
         <div style="background-color: #0B91E5; height: 30px"></div>
@@ -54,39 +54,32 @@ function loggInn() {
   let mail = "";
   let passord = "";
   let brukertype = "";
-  // console.log(innloggInput);
-  // console.log(document.getElementById("radioknapp").checked);
+  
 
   for (i = 0; i < model.bruker.length; i++) {
 
-    try{
-      mail = model.bruker[i].kunde.email;
-      passord = model.bruker[i].kunde.passord;
-      brukertype = "kunde";
-    }catch{
-      mail = model.bruker[i].tilbyder.email;
-      passord = model.bruker[i].tilbyder.passord;
-      brukertype = "tilbyder";
-    }
+    mail = model.bruker[i][model.bruker[i].brukertype].email;
+    passord = model.bruker[i][model.bruker[i].brukertype].passord;
+    brukertype = model.bruker[i].brukertype;
 
 
-    if (mail == innloggInput && passord == passordInput && brukertype == "kunde") {
-      innloggetBruker = i;
-      innlogget = brukertype;
-      break;
-    } else if (mail == innloggInput && passord == passordInput && brukertype == "tilbyder") {
+    if (mail == innloggInput && passord == passordInput) {
       innloggetBruker = i;
       innlogget = brukertype;
       break;
     }
   }
 
-  if (innlogget == "kunde" || innlogget == "tilbyder"){
+
+  if (innlogget == "kunde" || innlogget == "tilbyder") {
     mainHTML.innerHTML = kartside();
   } else {
     console.log("Feil epost og/eller passord");
   }
-  
+
+
 }
+
+
 
 //<div style="background-color: #0B91E5; height: 58px; top: ${screen.height-this.height};  "></div>
