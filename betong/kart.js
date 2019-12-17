@@ -13,7 +13,7 @@ function kartside() {
         <div id="kartcontainer" class="sticky">
         <input type="text" style="width: 50%;" value="Søk:"></input>
         </div>
-        <img src="kart.png" onclick="popupjobb(document.getElementById('popup'))"></img>
+        <img src="kartutengui.png" onclick="popupjobb(document.getElementById('popup'))" style="width: 100vw; height: 100vh;"></img>
         </center>
         `
 
