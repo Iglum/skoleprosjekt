@@ -21,8 +21,8 @@ function kartside() {
         html += navbar;
     } else {
         html += `
-            <button onclick="popupjobb(document.getElementById('loggInn'))" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: fixed; bot: 0; left: ${(0 * knappebredde)}px;">Logg inn</button>
-            <button onclick="mainHTML.innerHTML = regBedrift()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: fixed; bot: 0; left: ${(1 * (knappebredde*2))}px;">Registrer deg</button>
+            <button onclick="popupjobb(document.getElementById('loggInn'))" class="kartknapper navbar" style="display: inline-block; height: 58px; width: 50%;">Logg inn</button>
+            <button onclick="mainHTML.innerHTML = regBedrift()" class="kartknapper navbar" style="display: inline-block; height: 58px; width: 50%; left: 50%;">Registrer deg</button>
             `
     }
 
