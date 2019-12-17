@@ -44,14 +44,14 @@ div {
 <p>Vennligst skriv inn brukernavn eller e-postadresse. Du vil motta en lenke for å opprette et nytt passord via e-post.</p>
 
 <div>
-  <form action="/action_page.php">
+  
     <label for="fname">Brukernavn eller e-postadresse.</label>
     <input type="text" id="fname" name="firstname" placeholder="">
 
    
   
-    <input type="submit" value="Få nytt passord">
-  </form>
+    <input onclick=(console.log("jeglikerikkebrunost123")) type="submit" value="Få nytt passord"></input>
+  
 </div>
 
 
