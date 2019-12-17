@@ -35,7 +35,7 @@ function loggInnSide() {
 
         </center>
     </div>
-    <div style="background-color: #0B91E5; height: 58px; width: 100%; position: absolute; top: ${640 - 58}px;"></div>
+    <div class="navbar" style="height: 58px;"></div>
     `
   return html;
 }
