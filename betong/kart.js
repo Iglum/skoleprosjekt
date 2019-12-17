@@ -21,13 +21,13 @@ function kartside() {
         html += navbar;
     } else {
         html += `
-            <button onclick="mainHTML.innerHTML = kartside()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;">Logg inn</button>
-            <button onclick="mainHTML.innerHTML = regBedrift()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(1 * (knappebredde*2))}px;">Registrer deg</button>
+            <button onclick="popupjobb(document.getElementById('loggInn'))" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: fixed; bot: 0; left: ${(0 * knappebredde)}px;">Logg inn</button>
+            <button onclick="mainHTML.innerHTML = regBedrift()" class="kartknapper" style="height: ${knappehoyde}px; width: ${knappebredde * 2}px; display: inline-block; position: fixed; bot: 0; left: ${(1 * (knappebredde*2))}px;">Registrer deg</button>
             `
     }
 
     html+=`
-    <div id="popup" style="top: 20%; position: absolute; visibility: hidden; left: 23px; background-color: white; border: 1px solid black">
+        <div id="popup" style="top: 20%; position: absolute; visibility: hidden; left: 23px; background-color: white; border: 1px solid black">
         <h3>Kjell Nordmann</h3>
         </br>
         <p>Ønsker gulvstøping til garasje</p>
@@ -35,8 +35,21 @@ function kartside() {
         </br>
         <button>Se mer info</button>
         <button onclick="popupjobb(document.getElementById('popup'))">Tilbake</button>
-     </div>
-`
+        </div>
+    `
+
+    html += `
+        <div id="loggInn" style="padding: 15px; top: 60px;; position: absolute; visibility: hidden; background-color: white; border: 1px solid black">
+        <input id="innloggInput" type="text" value="Epost/telefon" onclick="tomInput(this)" style="width: 70%"></input>
+        </br>
+        <input id="passordInput" type="password" value="Passord" onclick="tomInput(this)" style="width: 70%"></input>
+        </br>
+        </br>
+        <button onclick="loggInn()">Logg inn</button>
+        <button onclick="popupjobb(document.getElementById('loggInn'))">Tilbake</button>
+        </div>
+        
+    `
 
     return html;
 }
