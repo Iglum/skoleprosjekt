@@ -36,7 +36,7 @@ function loggInnSide() {
         </center>
     </div>
     <div class="navbar" style="height: 58px;"></div>
-    `
+    `;
   return html;
 }
 
@@ -53,14 +53,10 @@ function loggInn() {
   let passordInput = document.getElementById("passordInput").value;
   let mail = "";
   let passord = "";
-  let brukertype = "";
-  
 
   for (i = 0; i < model.bruker.length; i++) {
-
     mail = model.bruker[i][model.bruker[i].brukertype].email;
     passord = model.bruker[i][model.bruker[i].brukertype].passord;
-
 
     if (mail == innloggInput && passord == passordInput) {
       innloggetBruker = i;
@@ -69,16 +65,11 @@ function loggInn() {
     }
   }
 
-
   if (innlogget == "kunde" || innlogget == "tilbyder") {
     mainHTML.innerHTML = kartside();
   } else {
     console.log("Feil epost og/eller passord");
   }
-
-
 }
-
-
 
 //<div style="background-color: #0B91E5; height: 58px; top: ${screen.height-this.height};  "></div>
