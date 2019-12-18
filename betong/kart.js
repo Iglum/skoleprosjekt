@@ -9,11 +9,11 @@ function kartside() {
     let html = "";
 
     html += `
+        <input type="text" class="sticky" style="width: 50vh; display: inline-block; position: absolute; margin: 0 auto;" value="Søk:"></input>    
         <center>
-        <div id="kartcontainer" class="sticky">
-        <input type="text" style="width: 50%;" value="Søk:"></input>
+        <div id="kartcontainer">
         </div>
-        <img src="kartutengui.png" onclick="popupjobb(document.getElementById('popup'))" style="width: 100vw; height: 100vh;"></img>
+        <img src="kartutengui.png" onclick="popupjobb(document.getElementById('popup'))" style="width: 100vw; height: 100vh; top: 0;"></img>
         </center>
         `
 
