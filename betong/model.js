@@ -1,163 +1,9 @@
 // let mainHTML = document.getElementById('mainContent').innerHTML;
 
 let model = {
-  bruker: [
-    {
-      id: 0,
-      brukertype: ["tilbyder"],
-      tilbyder: {
-        bedrift: "Betongsentrum AS",
-        kontaktperson: "Jim Hansen",
-        adresse: "Hvittingfossveien 254, 3089 Holmestrand",
-        tlf: ["923 78 455"],
-        ansatte: "4",
-        hjemmeside: "www.betongsentrum.no",
-        orgnr: "921743432",
-        faktadr: "Hvittingfossveien 254, 3089 Holmestrand",
-        email: "post@betongsentrum.no",
-        passord: "123",
-        tjenester: {
-          snorydding: [true, "spade", "snofreser", "traktor"],
-          betong: [true, "forskaling", "gulvstoping"]
-        }
-      }
-    },
 
-    {
-      id: 1,
-      brukertype: ["tilbyder"],
-      tilbyder: {
-        bedrift: "Murer Sørensen AS",
-        kontaktperson: "Remi Sørensen",
-        adresse: "Løkeveien 265, 3160 Stokke",
-        tlf: ["486 65 289"],
-        ansatte: "1",
-        hjemmeside: "undefined",
-        orgnr: "921587456",
-        faktadr: "Løkeveien 265, 3160 Stokke",
-        email: "post@murersorensen.no",
-        passord: "123",
-        tjenester: {
-          snorydding: [true, "spade", "snofreser", "traktor"],
-          betong: [false]
-        }
-      }
-    },
-
-    {
-      id: 2,
-      brukertype: ["tilbyder"],
-      tilbyder: {
-        bedrift: "Kjetils Betong AS",
-        kontaktperson: "Kjetil Karlsen",
-        adresse: "Bettånggata 14, 1452 Tong",
-        tlf: ["985 54 778"],
-        ansatte: "3",
-        hjemmeside: "www.kjetilsbetong.no",
-        orgnr: "365985412",
-        faktadr: "Bettånggata 14, 1452 Tong",
-        email: "post@kjertilsbetong.no",
-        passord: "123",
-        tjenester: {
-          snorydding: [true, "spade", "snofreser", "traktor"],
-          betong: [true, "forskaling", "gulvstøping"]
-        }
-      }
-    },
-
-    {
-      id: 3,
-      brukertype: ["kunde"],
-      kunde: {
-        navn: "Martin Brygmann",
-        adresse: "Ryghs vei 23, 0785 Oslo",
-        tlf: ["986 62 319"],
-        email: "martin@brygmann.no",
-        passord: "123"
-      }
-    },
-
-    {
-      id: 4,
-      brukertype: ["kunde"],
-      kunde: {
-        navn: "Pia Amundsen",
-        adresse: "Skipperløkka 5, 3260 Larvik",
-        tlf: ["900 70 967"],
-        email: "titovn99elskerkanin@piczo.no",
-        passord: "123"
-      }
-    },
-
-    {
-      id: 5,
-      brukertype: ["kunde"],
-      kunde: {
-        navn: "Per Hansen",
-        adresse: "Skinmoveien 2, 3270 Sandefjord",
-        tlf: ["492 65 882"],
-        email: "per.hansen@gmail.com",
-        passord: "123"
-      }
-    },
-
-    {
-      id: 6,
-      brukertype: ["kunde"],
-      kunde: {
-        navn: "Anita Dahl",
-        adresse: "Ragnhildrødveien 40, 3160 Stokke",
-        tlf: ["447 55 269"],
-        email: "anitadahl@gmail.com",
-        passord: "123"
-      }
-    },
-
-    {
-      id: 7,
-      brukertype: ["kunde"],
-      kunde: {
-        navn: "Kjell Olsen",
-        adresse: "Vennerødveien 20, 3158 Andebu",
-        tlf: ["963 58 002"],
-        email: "kjell72@hotmail.com",
-        passord: "123"
-      }
-    },
-
-    {
-      id: 8,
-      brukertype: ["kunde"],
-      kunde: {
-        navn: "Ole Petter Sjøbrenn",
-        adresse: "Skuggedalveien 37, 3270 Larvik",
-        tlf: ["416 19 671"],
-        email: "sjobrenn98@gmail.com",
-        passord: "123"
-      }
-    }
-  ],
-
-  aktiveTjenester: [
-    {
-      tilbyder: 0,
-      omrode: "Vestfold",
-      type: "Betongoppdrag"
-    }
-  ],
-
-  tilgjengeligeJobber: [
-    {
-      kunde: 4,
-      jobber: [
+    bruker: [
         {
-          tittel: "Gulvstøping til Garasje",
-          beskrivelse: "Beskrivelse av jobben",
-          dato: "13.02.2020",
-          omrode: "Holmestrand"
-        }
-      ]
-    },
             id: 0,
             brukertype: ['tilbyder'],
             tilbyder: {
@@ -179,9 +25,6 @@ let model = {
         },
 
 
-    {
-      kunde: 3,
-      jobber: [
         {
             id: 1,
             brukertype: ['tilbyder'],
@@ -238,6 +81,7 @@ let model = {
             }
         },
 
+
         {
             id: 4,
             brukertype: ['kunde'],
@@ -249,6 +93,7 @@ let model = {
                 passord: '123'
             }
         },
+
 
         {
             id: 5,
@@ -263,23 +108,6 @@ let model = {
         },
 
 
-    {
-      bedrift: 2,
-      jobber: [
-        {
-          dato: "23.06.2019",
-          status: "Fullført",
-          tittel: "Forskaling til støp i Hof",
-          beskrivelse: "*Beskrivelse av jobb*"
-        }
-      ]
-    }
-  ],
-
-  chat: [
-    {
-      deltakere: [0, 5],
-      meldinger: [
         {
             id: 6,
             brukertype: ['kunde'],
@@ -291,6 +119,7 @@ let model = {
                 passord: '123'
             }
         },
+
 
         {
             id: 7,
@@ -304,6 +133,7 @@ let model = {
             }
         },
 
+
         {
             id: 8,
             brukertype: ['kunde'],
@@ -316,6 +146,12 @@ let model = {
             }
         },
 
+
+    ],
+
+
+
+    aktiveTjenester: [
         {
             tilbyder: 0,
             omrode: 'Vestfold',
@@ -323,6 +159,7 @@ let model = {
         }
     ],
 
+    tilgjengeligeJobber: [
         {
             kunde: 4,
             jobber: [
@@ -349,6 +186,7 @@ let model = {
 
     ],
 
+    forespurteJobber: [
         {
             kunde: 'Per Hansen',
             jobber: [
@@ -364,6 +202,9 @@ let model = {
             ]
         },
 
+    ],
+
+    historikk: [
         {
             bedrift: 0,
             jobber: [
@@ -401,12 +242,9 @@ let model = {
                 }
             ]
         }
-      ]
-    },
+    ],
 
-    {
-      deltakere: [0, 6],
-      meldinger: [
+    chat: [
         {
             deltakere: [0, 5],
             meldinger: [
@@ -468,6 +306,7 @@ let model = {
             ]
         },
 
+
         {
             deltakere: [0, 6],
             meldinger: [
@@ -487,9 +326,6 @@ let model = {
         },
 
 
-    {
-      deltakere: [0, 7],
-      meldinger: [
         {
             deltakere: [0, 7],
             meldinger: [
@@ -509,6 +345,7 @@ let model = {
             ]
         },
 
+
         {
             deltakere: [3, 8],
             meldinger: [
@@ -527,18 +364,10 @@ let model = {
                 }
             ]
         }
-      ]
-    },
 
-    {
-      deltakere: [3, 8],
-      meldinger: [
-        {
-          avsender: 8,
-          emne: "Fett",
-          innhold: "Hallå, brodern!"
-        },
+    ],
 
+    sendteTilbud: [
         {
             bedrift: 0,
             jobber: [
@@ -557,26 +386,19 @@ let model = {
                 }
             ]
         }
-      ]
-    }
-  ],
+    ],
 
-  sendteTilbud: [
-    {
-      bedrift: 0,
-      jobber: [
+    rangering: [
         {
-          dato: "29.12.2019",
-          status: "Venter...",
-          tittel: "Støping byggeplass",
-          beskrivelse: "*Beskrivelse av jobb*"
+            bedrift: 0,
+            stjerner: 4,
+            vurderinger: 1
         },
 
         {
-          dato: "08.01.2020",
-          status: "Venter...",
-          tittel: "Gulvstøping Garasje",
-          beskrivelse: "*Beskrivelse av jobb*"
+            bedrift: 2,
+            stjerner: 2,
+            vurderinger: 1
         }
     ],
 
@@ -590,7 +412,7 @@ let model = {
                   fill='white' />
               </svg>
               `
-    },
+        },
 
         {
             navn: 'svgsokikon',
@@ -601,7 +423,7 @@ let model = {
                   fill='white' />
               </svg>
               `
-    },
+        },
 
         {
             navn: 'svgmelding',
@@ -612,7 +434,7 @@ let model = {
                   fill='white' />
               </svg>
               `
-    },
+        },
 
         {
             navn: 'svgminside',
@@ -623,16 +445,17 @@ let model = {
                   fill='white' />
               </svg>
               `
-    },
+        },
 
         {
             navn: 'svgbilbord',
             svg: `
  
   `
-    }
-  ]
+        }
+    ]
 };
+
 
 let innloggetBruker;
 let innlogget;
@@ -655,7 +478,8 @@ let navbar = `
 <button onclick='mainHTML.innerHTML = chatside(${innloggetBruker})' class='kartknapper buttonsize'>${model.svg[2].svg}</button>
 <button onclick='mainHTML.innerHTML = minside(${innloggetBruker})' class='kartknapper buttonsize'>${model.svg[3].svg}</button>
 </div>
-`;
+`
+
 
 let navbarlite = `
   
@@ -667,6 +491,7 @@ let navbarlite = `
   </div>
   
   `;
+
 
 // !!! NAV BAR INNLOGGET!!! //
 //<button onclick='mainHTML.innerHTML = kartside(${innloggetBruker})' class='kartknapper' style='height: ${knappehoyde}px; width: ${knappebredde}px; display: inline-block; position: absolute; top: ${bildehoyde - knappehoyde}px; left: ${(0 * knappebredde)}px;'>${svgkartikon}</button>
