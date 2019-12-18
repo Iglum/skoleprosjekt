@@ -39,14 +39,25 @@ function sokeSide() {
     </div>
     </br>
     `
+
+    let someObject = {
+        foo: "This", 
+        bar: "works!"
+    };
+
+    let test = "hallo";
+
     for(let i = 0; i < model.tilgjengeligeJobber.length; i++){
         let ledigeJobber = model.tilgjengeligeJobber[i].jobber;
         for(let j = 0; j < ledigeJobber.length; j++){
             let ledigJobb = ledigeJobber[j];
+            
+            // let jobbSomString = JSON.stringify(ledigJobb);
+            console.log(ledigJobb);
 
             html +=
                 ` 
-                <div onclick="mainHTML.innerHTML = oppdraginfo()" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
+                <div onclick="mainHTML.innerHTML = oppdraginfo(${i},${j})" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
             
                             <h2>${ledigJobb.tittel}</h2>
                             <ul style="list-style-type:none;">

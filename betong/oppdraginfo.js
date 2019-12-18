@@ -1,7 +1,9 @@
 //oppdrag info (not yet)
 
 //Denne funksjonen sjekker bare hvilken bedrift som er logget inn og skriver html.
-function oppdraginfo() {
+function oppdraginfo(ledigJobb1, ledigJobb2) {
+
+  console.log(ledigJobb1, ledigJobb2);
 
   let html = "";
 
@@ -11,6 +13,7 @@ function oppdraginfo() {
     </div></br>
     <center><h2>${model.tilgjengeligeJobber[0].jobber[0].tittel}</center></h2>
     <div style="font-size: 20px; margin-left: 10px;">
+    </br><center>Kart over stedet</center>
     </br>
     <ul style="list-style-type:none;">
       <li><b>Navn:</b> ${model.bruker[3].kunde.navn}</li>
@@ -20,13 +23,12 @@ function oppdraginfo() {
       <li>${model.tilgjengeligeJobber[0].jobber[0].beskrivelse}</li>
       </ul>
       </div>
-    `;
+    `
 
+    html += navbar;
 
-
-
-
-
+      return html;
+  }
 
   // for (let i = 0; i < model.chat.length; i++) {
   //   if (model.chat[i].bedrift == innloggetBruker) {
@@ -51,5 +53,3 @@ function oppdraginfo() {
   //   }
   // }
 
-  return html;
-}
