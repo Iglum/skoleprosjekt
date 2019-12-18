@@ -53,7 +53,7 @@ function minside() {
     </br>
     </p>
     <center><div class="button-group" style="margin-top: 5px;">
-    <button onclick='mainHTML.innerHTML = endreprofil()'>Endre Profil</button>
+    <button onclick='mainHTML.innerHTML = lagreEndringer()'>Endre Profil</button>
     <button onclick='mainHTML.innerHTML = visHistorikk()'>Historikk</button>
     <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
     </div></center>
