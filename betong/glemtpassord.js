@@ -46,19 +46,29 @@ div {
 <div>
   
     <label for="fname">Brukernavn eller e-postadresse.</label>
-    <input type="text" id="fname" name="firstname" placeholder="">
+    <input id="glemtPassord" type="text" id="fname" name="firstname" placeholder="">
 
    
   
-    <input onclick=(console.log("jeglikerikkebrunost123")) type="submit" value="Få nytt passord"></input>
+    <input onclick=glemtPassordsjekk() type="submit" value="Få nytt passord"></input>
   
 </div>
-
-
-
-
-
 `;
 
   return html;
+}
+
+function glemtPassordsjekk() {
+  let mail = document.getElementById("glemtPassord").value;
+
+  //mail = post@betongsentrum.no;
+
+  for (i = 0; i < model.bruker.length; i++) {
+    if (mail == model.bruker[i][model.bruker[i].brukertype].email) {
+      console.log(model.bruker[i][model.bruker[i].brukertype].passord);
+      break;
+    } else if (i == model.bruker.length - 1) {
+      console.log("Denne emailen er ikke registrert i systemet.");
+    }
+  }
 }
