@@ -3,7 +3,6 @@
 
 function sokeSide() {
     let html = "";
-    console.log();
 
     html += `
     <div style="background-color: #0B91E5; display: flex;">
@@ -52,8 +51,6 @@ function sokeSide() {
         for(let j = 0; j < ledigeJobber.length; j++){
             let ledigJobb = ledigeJobber[j];
             
-            // let jobbSomString = JSON.stringify(ledigJobb);
-            console.log(ledigJobb);
 
             html +=
                 ` 

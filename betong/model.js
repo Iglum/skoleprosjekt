@@ -165,7 +165,7 @@ let model = {
             jobber: [
                 {
                     tittel: 'Gulvstøping til Garasje',
-                    beskrivelse: 'Beskrivelse av jobben',
+                    beskrivelse: 'Ønsker gulvstøping til garasjen...',
                     dato: '13.02.2020',
                     omrode: 'Holmestrand'
                 }
@@ -177,7 +177,7 @@ let model = {
             jobber: [
                 {
                     tittel: 'Forskalling',
-                    beskrivelse: 'Beskrivelse av jobben',
+                    beskrivelse: 'Trenger forskalling til...',
                     dato: '16.01.2020',
                     omrode: 'Oslo'
                 }
