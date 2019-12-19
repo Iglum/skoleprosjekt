@@ -36,7 +36,7 @@ function chatside() {
             }
 
             html += `
-                    <div onclick="mainHTML.innerHTML = meldinger('${deltakerId}')" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
+                    <div onclick="mainHTML.innerHTML = meldinger('${deltakerId}'), window.scrollTo(0, document.body.scrollHeight);" style="background-color: #F8F8F8; border: 1px solid #C6C6C6; width: 90%; margin: auto; margin-bottom: 10px; padding-left: 10px;">
                     <h2>${deltakere}</h2>
 
                     `

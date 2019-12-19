@@ -104,6 +104,7 @@ function sendMelding(){
     }
     // document.getElementById("deltakere").innerHTML = '';
     mainHTML.innerHTML = meldinger(parseInt(chat));
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
 
