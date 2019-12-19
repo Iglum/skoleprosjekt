@@ -1,6 +1,5 @@
 function lagreEndringer() {
 
-    console.log('y');
 
     let navn = document.getElementById('endrenavn').value;
     let adresse = document.getElementById('endreadresse').value
@@ -8,6 +7,7 @@ function lagreEndringer() {
     let email = document.getElementById('endreemail').value;
 
     if (innlogget = 'tilbyder') {
+        console.log('tilbyder');
         let firmanavn = document.getElementById('endrebedrift').value;
         let faktadresse = document.getElementById('endrefaktadresse').value;
         let orgnr = document.getElementById('endreorgnr').value;
