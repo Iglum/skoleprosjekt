@@ -1,4 +1,4 @@
-
+function lagreEndringer(){
 
     let navn = document.getElementById('endrenavn').value;
     let adresse = document.getElementById('endreadresse').value
