@@ -39,13 +39,6 @@ function sokeSide() {
     </br>
     `
 
-    let someObject = {
-        foo: "This", 
-        bar: "works!"
-    };
-
-    let test = "hallo";
-
     for(let i = 0; i < model.tilgjengeligeJobber.length; i++){
         let ledigeJobber = model.tilgjengeligeJobber[i].jobber;
         for(let j = 0; j < ledigeJobber.length; j++){
