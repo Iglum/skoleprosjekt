@@ -299,7 +299,7 @@ let model = {
                 {
                     avsender: 5,
                     emne: 'Spørsmål ang. støping',
-                    innhold: 'EvenMoar Dummydummydummy'
+                    innhold: ' Siste evenMoar Dummydummydummy'
                 }
 
                 

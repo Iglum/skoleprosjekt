@@ -23,14 +23,12 @@ function meldinger(deltakere) {
     </div>
     `;
 
+    // html+= `<div id="JDKSJAKDS" style="background-color: powderblue; height: 100vh;>`
+    html += `<div style="height: 45px; background-color: blue; clear: both; visibility: hidden;"></div>`
 
     for (let i = 0; i < model.chat.length; i++) {
         if (model.chat[i].deltakere.includes(innloggetBruker) && model.chat[i].deltakere.includes(parseInt(deltakere))) {
             let chat = model.chat[i].meldinger;
-
-            html+= `<div id="JDKSJAKDS" style="background-color: powderblue;>`
-
-            
 
             for (let y = 0; y < chat.length; y++) {
 
@@ -62,13 +60,16 @@ function meldinger(deltakere) {
 
 
             }
-            html += `</div>`;
             break;
         }
     }
 
+    // html += `</div>`;
+
+    html += `<div style="height: 95px; background-color: blue; clear: both; visibility: hidden;"></div>`
+
     html+= `
-            <div style="border: 1px solid black; bottom: 68px; position: fixed; width: 100vw; background-color: white;">
+            <div style="border: 1px solid black; bottom: 69px; position: fixed; width: 100vw; background-color: white;">
             <p id="melding" contenteditable="true" style="display: inline-block; max-width: 89vw;"></p>
             <button onclick="sendMelding()" style="right: 0; float: right; display: inline-block; width: 10vw; height: 100%;">Send</button>
             </div>
