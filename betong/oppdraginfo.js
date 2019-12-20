@@ -26,7 +26,7 @@ model.bruker.bruketype == 'kunde' ? person = 'navn' : person = 'kontaktperson';
       </div>
       </br>
       <center><div class="button-group" style="margin: auto">
-        <button onclick="mainHTML.innerHTML = bekreftelseSide()" style="width:50%; display: flex; justify-content: center">Send tilbud</>
+        <button onclick="mainHTML.innerHTML = kontaktInfo()" style="width:50%; display: flex; justify-content: center">Send tilbud</>
       </div></center>
     `
     html += navbar;
