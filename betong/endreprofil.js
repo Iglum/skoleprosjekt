@@ -20,8 +20,7 @@ function endreProfil() {
     </div>
     </br>
     <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
-    <div class="wrapper font">
-    <center>
+    <div class="wrapper font" style="margin-left: 20px; margin-right: 20px;">
     ${person}:
     <input id="endrenavn" type="text" name="${person}" value="${
     model.bruker[innloggetBruker][innlogget][person.toLowerCase()]
@@ -71,7 +70,7 @@ Nytt passord:
 <br>
 
            
-</center>
+</div>
 <br>
 
 

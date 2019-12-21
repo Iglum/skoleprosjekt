@@ -17,7 +17,8 @@ function minside() {
     <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
     <center><p style="font-size: 35px;">★★★☆</p></center>
 
-    <p style="font-size: 20px; margin-left: 10px;"><b>${person}:</b> 
+    <center>
+    <p style="font-size: 20px; margin-left: 10px; margin-right:"><b>${person}:</b> 
     </br>${model.bruker[innloggetBruker][innlogget][person.toLowerCase()]}
     </br>
     `
@@ -52,6 +53,7 @@ function minside() {
     </br>${model.bruker[innloggetBruker][innlogget].email}
     </br>
     </p>
+    </center>
     <center><div class="button-group" style="margin-top: 5px;">
     <button onclick='mainHTML.innerHTML = endreProfil()'>Endre Profil</button>
     <button onclick='mainHTML.innerHTML = visHistorikk()'>Historikk</button>
