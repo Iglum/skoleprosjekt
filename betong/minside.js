@@ -60,8 +60,8 @@ function minside() {
     <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
     </div></center>
     
-    <div style="height: 300px; background-color: yellow; text-align: right;">
-    <button style="color: blue;">Logg ut</button>
+    <div style="height: 300px; text-align: right;">
+    <button onclick="mainHTML.innerHTML = loggInnSide()" style="background-color: red; color: white; padding: 10px; text-decoration: none; border: none; text-align: center; border-radius: 14px; position:">Logg ut</button>
     </div>
 
       `;
