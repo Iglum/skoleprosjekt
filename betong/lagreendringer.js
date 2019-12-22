@@ -4,8 +4,9 @@ function lagreEndringer(){
     let adresse = document.getElementById('endreadresse').value
     let tlf = document.getElementById('endretlf').value;
     let email = document.getElementById('endreemail').value;
+    let nyttpassord = document.getElementById('endrepassord').value;
 
-    if (innlogget = 'tilbyder') {
+    if (model.bruker[innloggetBruker].brukertype == 'tilbyder') {
         console.log('tilbyder');
         let firmanavn = document.getElementById('endrebedrift').value;
         let faktadresse = document.getElementById('endrefaktadresse').value;
@@ -24,14 +25,19 @@ function lagreEndringer(){
             mainHTML.innerHTML = minside();
         }
 
-    } else if (innlogget = 'kunde') {
+    } else if (model.bruker[innloggetBruker].brukertype == 'kunde') {
         if (navn != '' && adresse != '' && tlf != '' && email != '') {
             model.bruker[innloggetBruker][innlogget].navn = navn;
             model.bruker[innloggetBruker][innlogget].adresse = adresse;
             model.bruker[innloggetBruker][innlogget].tlf[0] = tlf;
             model.bruker[innloggetBruker][innlogget].email = email;
             mainHTML.innerHTML = minside();
+
         }
+    }
+
+    if (nyttpassord != ''){
+        model.bruker[innloggetBruker][innlogget].passord = nyttpassord;
     }
 
 }
