@@ -60,6 +60,9 @@ function minside() {
     <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
     </div></center>
     
+    <div style="height: 300px; background-color: yellow; text-align: right;">
+    <button style="color: blue;">Logg ut</button>
+    </div>
 
       `;
   html += navbar;
