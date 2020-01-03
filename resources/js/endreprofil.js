@@ -19,7 +19,7 @@ function endreProfil() {
 
     </div>
     </br>
-    <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
+    <img src="resources/img/img_avatar.jpg" alt="Avatar" class="avatar center">
     <div class="wrapper font" style="margin-left: 20px; margin-right: 20px;">
     ${person}:
     <input id="endrenavn" type="text" name="${person}" value="${

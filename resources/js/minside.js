@@ -14,14 +14,14 @@ function minside() {
 
   </div>
   </br>
-    <img src="img_avatar.jpg" alt="Avatar" class="avatar center">
+    <img src="resources/img/img_avatar.jpg" alt="Avatar" class="avatar center">
     <center><p style="font-size: 35px;">★★★☆</p></center>
 
     <center>
     <p style="font-size: 20px; margin-left: 10px; margin-right:"><b>${person}:</b> 
     </br>${model.bruker[innloggetBruker][innlogget][person.toLowerCase()]}
     </br>
-    `
+    `;
 
   if (innlogget == "tilbyder") {
     html += `
