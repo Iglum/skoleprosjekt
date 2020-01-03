@@ -13,7 +13,7 @@ function kartside() {
         <center>
         <div id="kartcontainer">
         </div>
-        <img src="kartutengui.PNG" onclick="popupjobb(document.getElementById('popup'))" style="width: 100vw; height: 100vh; top: 0;"></img>
+        <img src="/resources/img/kartutengui.png" onclick="popupjobb(document.getElementById('popup'))" style="width: 100vw; height: 100vh; top: 0;"></img>
         </center>
         `
 
