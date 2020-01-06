@@ -47,53 +47,30 @@ function minside() {
 
   html += `
     <b>Telefon:</b>
-  </br>${model.bruker[innloggetBruker][innlogget].tlf}
+    </br>${model.bruker[innloggetBruker][innlogget].tlf}
     </br>
     <b>Email:</b>
     </br>${model.bruker[innloggetBruker][innlogget].email}
     </br>
     </p>
     </center>
+    <div style="height: 75px; visibility: hidden;"></div>
     <center><div class="button-group" style="margin-top: 5px;">
     <button onclick='mainHTML.innerHTML = endreProfil()'>Endre Profil</button>
     <button onclick='mainHTML.innerHTML = visHistorikk()'>Historikk</button>
     <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
     </div></center>
     
-    <div style="height: 300px; text-align: right;">
-    <button onclick="mainHTML.innerHTML = loggInnSide()" style="background-color: red; color: white; padding: 10px; text-decoration: none; border: none; text-align: center; border-radius: 14px; position:">Logg ut</button>
+    <div style="height: 150px; position: relative;">
+    <button onclick="mainHTML.innerHTML = loggInnSide()" style="background-color: red; color: white; padding: 10px; text-decoration: none; border: none; text-align: center; border-radius: 14px; position: absolute; bottom: 0; right: 50%;">Logg ut</button>
     </div>
 
       `;
+
+
+  html += `<div style="height: 95px; background-color: blue; clear: both; visibility: hidden;"></div>`
+
   html += navbar;
 
   return html;
 }
-
-//<div id="kartcontainer">
-
-//PIAS:
-//<center><p style="font-size: 35px;">★★★☆</p></center> CHECK
-    //<p style="font-size: 20px; margin-left: 10px;"><b>Kontaktperson:</b> CHECK
-    //</br>${model.tilbyder[innloggetbedrift].kontaktperson} CHECK
-    //</br> CHECK
-    //<b>Firmanavn:</b> CHECK
-    //</br>${model.tilbyder[innloggetbedrift].bedrift} CHECK
-    //</br> CHECK
-    //<b>Adresse:</b> CHECK
-    //</br>${model.tilbyder[innloggetbedrift].adresse} CHECK
-    //</br> CHECK
-    //<b>Organisasjonsnr.:</b> CHECK
-    //</br>${model.tilbyder[innloggetbedrift].orgnr} CHECK
-    //</br> CHECK
-    //<b>Telefon:</b>
-    //</br>${model.tilbyder[innloggetbedrift].tlf}
-    //</br> CHECK
-    //<b>Email:</b>
-    //</br>${model.tilbyder[innloggetbedrift].email}
-    //</p>
-    //<center><div class="button-group" style="margin-top: 5px;">
-    //  <button onclick='mainHTML.innerHTML = endreprofil()'>Endre Profil</button>
-    //  <button onclick='mainHTML.innerHTML = visHistorikk()'>Historikk</button>
-    //  <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
-    //</div></center>
