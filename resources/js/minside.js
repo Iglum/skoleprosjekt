@@ -61,10 +61,11 @@ function minside() {
     <button onclick='mainHTML.innerHTML = sendteTilbud()'>Sendte tilbud</button>
     </div></center>
     
-    <div style="height: 150px; position: relative;">
-    <button onclick="mainHTML.innerHTML = loggInnSide()" style="background-color: red; color: white; padding: 10px; text-decoration: none; border: none; text-align: center; border-radius: 14px; position: absolute; bottom: 0; right: 50%;">Logg ut</button>
+    
+    <div style="height: 190px; position: relative;">
+    <button onclick="mainHTML.innerHTML = loggInnSide()" style="background-color: grey; color: white; padding: 10px; text-decoration: none; border: none; text-align: center; border-radius: 14px; bottom: 0; position: absolute; right: 10px;">Logg ut</button>
     </div>
-
+    
       `;
 
 
