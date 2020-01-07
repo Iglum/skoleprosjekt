@@ -74,4 +74,6 @@ function minside() {
   html += navbar;
 
   return html;
+
+  
 }
