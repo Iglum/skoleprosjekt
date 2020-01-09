@@ -17,7 +17,7 @@ function kartside() {
         </center>
         `
 
-    if (innloggetBruker!= null && (innloggetBruker).constructor === Number) {
+    if (innloggetBruker != null && (innloggetBruker).constructor === Number) {
         html += navbar;
     } else {
         html += `
@@ -26,7 +26,7 @@ function kartside() {
             `
     }
 
-    html+=`
+    html += `
         <div id="popup" style="top: 20%; position: absolute; visibility: hidden; left: 23px; background-color: white; border: 1px solid black">
         <h3>Kjell Nordmann</h3>
         </br>
@@ -40,9 +40,9 @@ function kartside() {
 
     html += `
         <div id="loggInn" style="padding: 15px; top: 60px;; position: absolute; visibility: hidden; background-color: white; border: 1px solid black">
-        <input id="innloggInput" type="text" value="Epost/telefon" onclick="tomInput(this)" style="width: 70%"></input>
+        <input id="innloggInput" type="text" value="post@betongsentrum.no" onclick="tomInput(this)" style="width: 70%"></input>
         </br>
-        <input id="passordInput" type="password" value="Passord" onclick="tomInput(this)" style="width: 70%"></input>
+        <input id="passordInput" type="password" value="123" onclick="tomInput(this)" style="width: 70%"></input>
         </br>
         </br>
         <button onclick="loggInn()">Logg inn</button>

@@ -14,9 +14,9 @@ function loggInnSide() {
         <br>
         <br>
         <br><br><br>
-        <input id="innloggInput" type="text" value="Epost/telefon" onclick="tomInput(this)" style="width: 70%"></input>
+        <input id="innloggInput" type="text" value="post@betongsentrum.no" style="width: 70%"></input>
         </br>
-        <input id="passordInput" type="password" value="Passord" onclick="tomInput(this)" style="width: 70%"></input>
+        <input id="passordInput" type="password" value="123" style="width: 70%"></input>
         <br><br>
 
         <div class="button-group" style="margin: auto">
@@ -30,7 +30,7 @@ function loggInnSide() {
         <p onclick="mainHTML.innerHTML = glemtPassord()">Glemt passord?</p>
         </br></br></br>
         <div class="button-group" style="margin: auto">
-          <button onclick="innloggetBruker = 0, innlogget = 'tilbyder', mainHTML.innerHTML = kartside()" style="width:50%; display: flex; justify-content: center">Besøkende</>
+          <button onclick="mainHTML.innerHTML = kartside()" style="width:50%; display: flex; justify-content: center">Besøkende</>
         </div>
 
         </center>
